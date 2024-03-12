@@ -1,0 +1,311 @@
+.plx-sticky-section{
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: -1;
+    &.in{
+        z-index: 5;
+    }
+}
+
+
+#hero-scroll-down{
+    position: absolute;
+    height: 80px;
+    width: 35px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 90;
+    background: none;
+    border: 0;
+    -webkit-appearance: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+    @media (min-width: 0px) and (max-width: 767px){
+        bottom: -7rem;
+    }
+    @media (min-width: 768px) and (max-width: 1024px){
+        bottom: -6rem;
+    }
+    @media (min-width: 1025px){
+        bottom: 1.5rem;
+    }
+
+    span,
+    &:before,
+    &:after{
+        content: '';
+        width: 8px;
+        height: 8px;
+        display: block;
+        background: white;
+        margin: 6px 0px;
+        border-radius: 100%;
+        opacity: 0.2;
+        animation: showHideElement 2.4s 0s infinite ease-in-out;
+    }
+    &:before{
+        animation-delay: .6s;
+    }
+    span{
+        animation-delay: .8s;
+    }
+    &:after{
+        animation-delay: 1.2s;
+    }
+}
+
+
+@keyframes showHideElement{
+    0%    { opacity: 0.2; visibility: hidden;  }
+    50%   { opacity: 0.8; visibility: visible; }
+    100%  { opacity: 0.2; visibility: hidden;  }
+}
+
+.plx-scene{
+    position: relative;
+}
+
+.plx-sticky-title{
+    & > .Plx{
+        opacity: 0;
+    }
+}
+
+
+.plx-we-are-w{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .plx-heading{
+        text-align: center;
+        margin: 0;
+        opacity: 0;
+    }
+    h2{
+        margin-top: -2rem;
+        font-size: 6.5rem;
+        margin: 0;
+    }
+}
+
+
+.person {
+    position: absolute;
+    opacity: 1;
+}
+
+
+.plx-sticky-heading{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+    @media (min-width: 0px) and (max-width: 767px){
+        width: 100%;
+    }
+    @media (min-width: 768px) and (max-width: 1024px){
+        width: 100%;
+    }
+    @media (min-width: 1025px){
+        width: 100%;
+    }
+}
+
+h2.split-heading{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 0px) and (max-width: 767px){
+        &, * {
+            -webkit-backface-visibility: hidden;
+        }
+    }
+    @media (min-width: 0px) and (max-width: 554px){
+        font-size: 4rem;
+        line-height: 2rem;
+        div{
+            margin: 0.75rem 0;
+        }
+    }
+    @media (min-width: 555px) and (max-width: 767px){
+        font-size: 6rem;
+        line-height: 3.5rem;
+        div{
+            margin: 0.75rem 0;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1199px){
+        font-size: 7.5rem;
+        line-height: 4.5rem;
+        div{
+            margin: 1rem 0;
+        }
+    }
+    
+    @media (min-width: 1200px){
+        font-size: 11.25rem;
+        line-height: 6.875rem;
+        div{
+            margin: 1.5rem 0;
+        }
+    }
+
+    .Plx{
+        opacity: 0;
+    }
+    .plx-heading-left,
+    .plx-heading-right{
+        span{
+            position: relative;
+            display: block;
+        }
+    }
+    .plx-heading-left{
+        transform: translateX(-10rem);
+        transform-origin: center top;
+        position: relative;
+        @media (min-width: 0px) and (max-width: 767px){
+            span{
+                transform: translateX(3.25rem);
+            }
+        }
+        @media (min-width: 768px) and (max-width: 1199px){
+            span{
+                transform: translateX(3.25rem);
+            }
+        }
+    }
+    .plx-heading-right{
+        transform: translateX(10rem);
+        transform-origin: center bottom;
+        position: relative;
+        
+        @media (min-width: 0px) and (max-width: 767px){
+            span{
+                transform: translateX(-3.25rem);
+            }
+            .Plx{
+                transform: translateX(-5rem);
+            }
+        }
+        @media (min-width: 768px) and (max-width: 1199px){
+            span{
+                transform: translateX(-3.25rem);
+            }
+            .Plx{
+                transform: translateX(-5rem);
+            }
+        }
+    }
+}
+
+
+.slide-nav{
+    z-index: 40;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        display: inline-block;
+        cursor: pointer;
+        
+        @media (min-width: 1025px){
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+        
+        .img{
+            @media (min-width: 0px) and (max-width: 767px){
+                width: 28px;
+            }
+            @media (min-width: 768px){
+                width: 40px;
+            }
+        }
+        &.next{
+            margin-left: 7rem;
+        }
+        &.prev{
+            margin-right: 7rem;
+            img {
+                transform: rotateZ(180deg);
+            }
+        }
+    }
+    .slide-nums {
+        line-height: 100%;
+        margin-top: -10px;
+        
+        @media (min-width: 0px) and (max-width: 767px){
+            font-size: 2rem;
+        }
+        @media (min-width: 768px){
+            font-size: 3rem;
+        }
+        span{
+            margin: 0 8px;
+        }
+    }
+    
+    @media (min-width: 0px) and (max-width: 767px){
+        padding: 0 1.5rem;
+        justify-content: space-between;
+        a.prev,
+        a.next{
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+}
+
+
+.big-title-move{
+    transform: translateX(200vw);
+}
+
+.subtitle-move{
+    position: relative;
+    opacity: 0;
+    
+    @media (min-width: 0px) and (max-width: 767px){
+        top: 8rem;
+        left: 0rem;
+    }
+    @media (min-width: 768px) and (max-width: 1024px){
+        top: 9.5rem;
+        left: 0rem;
+        
+    }
+    @media (min-width: 1025px){
+        top: 13.5rem;
+        left: 0rem;
+    }
+}

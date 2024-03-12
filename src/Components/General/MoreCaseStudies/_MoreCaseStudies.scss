@@ -1,0 +1,60 @@
+.section-more-case-studies {
+  background: white;
+  color: #191919;
+  @media (min-width: 320px) {
+    padding: 0;
+  }
+  .section-title {
+    @media (min-width: 0px) and (max-width: 767px) {
+      font-size: 30px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .section-title {
+      font-size: 3.125rem;
+      line-height: 3.4375rem;
+    }
+  }
+
+  .col-case-study {
+    @media (min-width: 0px) and (max-width: 767px) {
+      margin-bottom: 2.5rem;
+    }
+
+    .image {
+      img {
+        width: 357px;
+        object-fit: cover;
+        @media (min-width: 320px) {
+          width: 100%;
+        }
+        @media (min-width: 1200px) {
+        }
+        @media (min-width: 768px) {
+          width: 100%;
+        }
+        @media (min-width: 1440px) {
+          height: 357px;
+        }
+      }
+    }
+
+    p {
+      @media (min-width: 1200px) {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        min-height: 108px;
+      }
+    }
+  }
+  .btn-wrap {
+    @media (min-width: 768px) {
+      margin-bottom: 2rem;
+    }
+  }
+  .btn {
+    max-width: 100px;
+  }
+}

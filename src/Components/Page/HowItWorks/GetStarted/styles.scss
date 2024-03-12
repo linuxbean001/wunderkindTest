@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "WunderBrick";
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: local("WunderBrickText-Regular"), local("WunderBrickText Regular"),
+    url(/Assets/fonts/WunderBrick/WunderBrick-Text.woff2) format("woff2"),
+    url(/Assets/fonts/WunderBrick/WunderBrick-Text.woff) format("woff");
+}
+
+.how-it-works-back-color {
+  background-color: #ffbb00;
+}
+.resource-back-color {
+  background-color: #cc9966;
+}
+.resource-back-color.how-it-works-get-started .container .get-started-button {
+  background: #000000;
+  border-color: #000000;
+}
+.how-it-works-get-started {
+  padding-bottom: 10rem;
+  .container {
+    align-items: flex-end;
+    h2 {
+      font-family: "WunderBrick";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 82px;
+      line-height: 86px;
+      /* or 105% */
+
+      display: flex;
+      align-items: center;
+
+      color: #191919;
+      padding-right: 1rem;
+      @media (max-width: 37.5em) {
+        font-size: 43px;
+        line-height: 53px;
+      }
+    }
+
+    .image-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      margin-left: -6rem;
+      @media (max-width: 74.938em) {
+        margin-left: 0;
+        max-width: 100%;
+      }
+      @media (max-width: 87.438em) {
+        height: max-content;
+      }
+    }
+
+    .get-started-button {
+      background: #3d55cc;
+      border-color: #3d55cc;
+    }
+  }
+}

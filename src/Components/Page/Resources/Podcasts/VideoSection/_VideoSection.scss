@@ -1,0 +1,41 @@
+.video-section {
+  background: rgb(246, 235, 226);
+  display: flex;
+  justify-content: center;
+
+  &-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &-iframe {
+    margin-top: -14rem;
+    aspect-ratio: 16 / 9;
+
+    @media (min-width: 2000px) {
+      margin-top: -18rem;
+    }
+
+    @media (min-width: 3000px) {
+      margin-top: -25rem;
+    }
+
+    @media (max-width: 1439px) {
+      margin-top: -12rem;
+    }
+
+    @media (max-width: 1023px) {
+      margin-top: -10rem;
+    }
+
+    @media (max-width: 767px) {
+      margin-top: -8rem;
+    }
+
+    @media (max-width: 430px) {
+      margin-top: -7rem;
+    }
+  }
+}

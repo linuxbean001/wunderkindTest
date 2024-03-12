@@ -1,0 +1,37 @@
+.subtitle-text {
+  font-family: Larsseit;
+  line-height: 1.625rem;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+
+  color: #fff;
+  margin-top: 2rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 1.15rem;
+    line-height: 2rem;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 1.15rem;
+    line-height: 2rem;
+  }
+
+  @media (max-width: 374px) {
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+  }
+}
+
+.subtitle-read-more {
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1.625rem;
+  font-size: 1.125rem;
+}

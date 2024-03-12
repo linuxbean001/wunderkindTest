@@ -1,0 +1,122 @@
+.section-lookbook {
+  position: relative;
+  z-index: 90;
+  background: #191919;
+  margin-bottom: 4rem;
+
+  .filter-wrapper {
+    margin: 4rem 0 7rem;
+  }
+}
+
+.divider-left {
+  border-left: 1px solid rgba(25, 25, 25, 0.1);
+}
+
+.lookbook {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .lookbook-title {
+    display: none;
+  }
+}
+
+@media (max-width: 1400px) {
+  .cards-grid {
+    gap: 1rem;
+    & .ui-card {
+      justify-self: center;
+      width: 100%;
+      height: 28rem;
+      & .ui-card-image {
+        min-height: 12.5rem;
+      }
+
+      & .item-title {
+        font-size: 1.75rem;
+        line-height: 1.5rem;
+      }
+
+      & .arrow-container {
+        top: 26rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+
+    & .ui-card {
+      width: 22.5rem;
+
+      & .content-section__first {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 995px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+
+    & .ui-card {
+      width: 100%;
+
+      & .content-section__first {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 616px) and (max-width: 650px) {
+  .cards-grid {
+    & .ui-card {
+      & .item-title {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 615px) {
+  .cards-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+    justify-items: center;
+
+    & .ui-card {
+      width: 23rem;
+      height: 30rem;
+
+      & .content-section__first {
+        margin-top: 3rem;
+      }
+
+      & .arrow-container {
+        top: 28rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .lookbook {
+    .lookbook-title {
+      display: block;
+      font-size: 40px;
+      margin-bottom: 98px;
+
+      .filter-selected {
+        padding-left: 1rem;
+      }
+    }
+  }
+}

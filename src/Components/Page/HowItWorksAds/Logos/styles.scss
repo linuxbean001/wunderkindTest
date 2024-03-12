@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'WunderBrick';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: local('WunderBrickText-Regular'), local('WunderBrickText Regular'),
+  url(/Assets/fonts/WunderBrick/WunderBrick-Text.woff2) format('woff2'),
+  url(/Assets/fonts/WunderBrick/WunderBrick-Text.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: local('Larsseit'), local('Larsseit'),
+  url(/Assets/fonts/Larsseit/Larsseit.woff2) format('woff2'),
+  url(/Assets/fonts/Larsseit/Larsseit.woff) format('woff');
+}
+
+.how-it-works-ads-logos-section {
+  position: relative;
+  z-index: 1;
+  padding-top: 5rem;
+  &:before {
+    content: "";
+    background: #191919;
+    height: 20rem;
+    transform: skewY(-5deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    margin-top: -10.5rem;
+  }
+  .hiw-title-container {
+    display: flex;
+    align-items: end;
+  }
+
+  h1 {
+    font-family: 'WunderBrick';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    @media (max-width: 500px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  .big-image {
+    img {
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+    }
+  }
+
+  h4 {
+    font-family: 'Larsseit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .hiw-ads-ul-wrapper {
+    padding: 4rem 0;
+  }
+
+  ul {
+    width: 65%;
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+  }
+  li {
+    font-family: 'Larsseit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .hiw-ads-logo {
+    padding-right: 23px;
+    padding-left: 23px;
+    padding-bottom: 60px;
+    min-width: 105px;
+    max-width: 210px;
+
+    @media (max-width: 500px) {
+      min-width: 80px;
+      padding-right: 25px;
+      >img {
+        width: 85px;
+      }
+    }
+
+    &.placeholder {
+      width: 200px;
+      &:nth-child(29) {
+        width: 166px;
+      }
+      @media (max-width: 500px) {
+        min-width: 80px;
+        width: 85px;
+        margin-right: 25px;
+        padding-right: 0;
+        &:nth-child(29) {
+          width: 85px;
+        }
+        >img {
+          width: 85px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    font-family: "WunderBrick";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    >div {
+      text-align: center;
+      @media (max-width: 500px) {
+        width: 90%;
+      }
+      >span {
+        color: #25B89D;
+      }
+    }
+    @media (max-width: 500px) {
+      margin-bottom: 2rem;
+    }
+    .btn {
+      background-color: #25B89D;
+      border-color: #25B89D;
+      color: white;
+    }
+  }
+}

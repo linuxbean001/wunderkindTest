@@ -1,0 +1,115 @@
+.gallery-slider{
+    padding-top: 8rem;
+    padding-bottom: 13.7rem;
+    position: relative;
+    
+    @media (min-width: 1200px){
+        padding-top: 12rem;
+    }
+    .gallery-box{
+        width: 100%;
+        margin-left: -6rem;
+        .image img{
+            width: 100%;
+            height: auto;
+        }
+        .info{
+            position: relative;
+            margin-top: 2rem;
+            padding: 0px 4px;
+            display: flex;
+            opacity: 0;
+            transition: all .25s ease-in;
+            .number{
+                font-size: 3rem;
+                line-height: 3.5rem;
+                margin-right: 3.1rem;
+            }
+            p{
+                margin-top: 0;
+            }
+            .caption{
+                max-width: 350px;
+                align-self: flex-end;
+                margin-top: 0.9rem;
+            }
+        }
+    }
+    .swiper-slide-active .gallery-box .info{
+        opacity: 1;
+    }
+    .slide-nav{
+        justify-content: flex-end;
+        padding-right: 9.5rem;
+        position: absolute;
+        right: 0;
+        bottom: 13.5rem;
+        a.prev{
+            @media (min-width: 0px) and (max-width: 767px){
+                margin-right: 2rem;
+            }
+            @media (min-width: 768px){
+                margin-right: 0rem;
+            }
+        }
+    }
+    &.no-nav-arrows{
+        .slide-nav{
+            display: none!important;
+        }
+    }
+    &.inc-gallery{
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
+//Mobile
+@media (min-width: 0px) and (max-width: 767px){
+    .gallery-slider{
+        padding-bottom: 6.7rem;
+        .gallery-box{
+            margin-left: -.75rem;
+
+            .info{
+                margin-top: .75rem;
+                flex-wrap: wrap;
+
+                .caption{
+                    margin-top: 1rem;
+                }
+            }
+        }
+        .slide-nav{
+            position: absolute;
+            width: 100%;
+            align-items: flex-end;
+            bottom: 8rem;
+            padding-right: 2rem;
+        }
+    }
+}
+//Tablet
+@media (min-width: 768px) and (max-width: 1024px){
+    .gallery-slider{
+        padding-bottom: 6.7rem;
+        .gallery-box{
+            margin-left: -2.6rem;
+        }
+        .slide-nav{
+            padding-right: 2.5rem;
+            bottom: 4rem;
+            .next{
+                position: relative;
+                top: 1.5px;
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1600px){
+    .gallery-slider{
+        margin-top: 0rem;
+        padding-top: 4rem;
+    }
+}

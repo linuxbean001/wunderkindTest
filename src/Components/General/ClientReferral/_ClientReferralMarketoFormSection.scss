@@ -1,0 +1,37 @@
+.client-referral-marketo-form-section {
+  background-color: #f5ebe1;
+  color: #191919;
+  padding-bottom: 4rem;
+  padding-top: 1rem;
+  .mktoForm {
+    margin: 0 auto;
+    .mktoFormRow {
+      input {
+        cursor: text;
+      }
+    }
+    .mktoButtonRow {
+      padding-top: 6px;
+    }
+  }
+  .title-wrap {
+    margin-bottom: 2rem;
+    h3 {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+      padding-top: 2.5rem;
+      font-family: 'WunderBrickText', 'Times New Roman', Times, serif;
+      font-weight: 400;
+    }
+  }
+  .links {
+    margin: auto;
+    width: max-content;
+    a {
+      padding: 0 1rem;
+      font-family: 'Helvetica', 'Arial';
+      font-size: .9rem;
+      text-decoration: none;
+    }
+  }
+}

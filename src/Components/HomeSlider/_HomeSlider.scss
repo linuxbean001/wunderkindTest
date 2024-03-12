@@ -1,0 +1,196 @@
+.section-home-slider{
+    position: relative;
+    z-index: 20;
+}
+
+.hero-banner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    z-index: 50;
+    
+    @media (min-width: 0px) and (max-width: 767px){
+        height: 90vh;
+        max-height: 580px;
+        @media screen and (orientation:landscape) {
+            min-height: 470px;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1024px){
+        height: 87vh;
+        max-height: 900px;
+        @media screen and (orientation:landscape) {
+            min-height: 500px;
+        }
+    }
+    @media (min-width: 1025px){
+        height: 100vh;
+    }
+
+    &.hero-titles{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    h2{
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .waw-slide{
+        opacity: 0;
+        visibility: hidden;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-transform: capitalize;
+        .heading-bg{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            @media (min-width: 0px) and (max-width: 767px){
+                background-size: auto 120%;
+                background-position: 67% 23%;
+            }
+        }
+    }
+
+    &.hero-patterns{
+        .waw-slide{
+            transition: all .15s ease-in-out;
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}) {
+                    transition-delay: #{$i * 1}s;
+                }
+            }
+            &:nth-child(1){
+                animation: fade1 4.15s 4.5s infinite;
+            }
+            &:nth-child(2){
+                animation: fade2 4.15s 4.5s infinite;
+            }
+            &:nth-child(3){
+                animation: fade3 4.15s 4.5s infinite;
+            }
+        }
+        &.loaded{
+            .waw-slide{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    @keyframes showHideElement{
+        0%    { opacity: 0; visibility: hidden;  }
+        15%   { opacity: 1; visibility: visible; }
+        85%  { opacity: 1; visibility: visible;  }
+        100%  { opacity: 0; visibility: hidden;  }
+    }
+    @keyframes fade1
+    {
+        0%      { opacity: 0 }
+        25%     { opacity: 1 }
+        50%     { opacity: 0 }
+        75%     { opacity: 0 }
+        100%    { opacity: 1 }
+    }
+    @keyframes fade2
+    {
+        0%      { opacity: 0 }
+        25%     { opacity: 0 }
+        50%     { opacity: 1 }
+        75%     { opacity: 0 }
+        100%    { opacity: 1 }
+    }
+    @keyframes fade3
+    {
+        0%      { opacity: 1 }
+        25%     { opacity: 0 }
+        50%     { opacity: 0 }
+        75%     { opacity: 1 }
+        100%    { opacity: 1 }
+    }
+
+
+    &.hero-titles{
+        .big-title span{
+            opacity: 0;
+            transition: all .15s ease-in-out;
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}) {
+                    transition-delay: #{$i * 1}s;
+                }
+            }
+        }
+    }
+
+    .heading-row{
+        position: fixed;
+        width: 100%;
+        height: 90%;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        z-index: 5;
+        @media (min-width: 0px) and (max-width: 767px){
+            max-height: 490px;
+            padding-top: 7.7rem;
+            @media screen and (orientation:landscape) {
+                height: 75%;
+            }
+        }
+        @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+            @media screen and (orientation:portrait) {
+                height: 70%;
+            }    
+        }
+        .big-title{
+            white-space: normal;
+            text-align: center;
+            @media (min-width: 0px) and (max-width: 767px){
+                font-size: 3rem;
+                line-height: 3rem;
+            }
+            @media (min-width: 768px) and (max-width: 1024px){
+                font-size: 6rem;
+                line-height: 6rem;
+            }
+            @media (min-width: 1025px){
+                font-size: 7.5rem;
+                line-height: 7.5rem;
+            }
+        }
+    }
+
+    &.hero-titles.loaded{
+        .big-title span{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &.hero-titles.loaded.out {
+        .big-title {
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+    /* &.out{
+        position: relative;
+        z-index: -1;
+        visibility: hidden;
+    } */
+
+}

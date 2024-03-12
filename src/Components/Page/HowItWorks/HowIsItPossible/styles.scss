@@ -1,0 +1,184 @@
+@font-face {
+  font-family: 'WunderBrick';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: local('WunderBrickText-Regular'), local('WunderBrickText Regular'),
+  url(/Assets/fonts/WunderBrick/WunderBrick-Text.woff2) format('woff2'),
+  url(/Assets/fonts/WunderBrick/WunderBrick-Text.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: local('Larsseit'), local('Larsseit'),
+  url(/Assets/fonts/Larsseit/Larsseit.woff2) format('woff2'),
+  url(/Assets/fonts/Larsseit/Larsseit.woff) format('woff');
+}
+
+.how-is-it-possible {
+  background-color: #F5EBE0;
+  color: #191919;
+
+  h2 {
+    font-family: 'WunderBrick';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 82px;
+    line-height: 86px;
+    margin-top: 0;
+    @media (max-width: 600px) {
+      font-size: 43px;
+      line-height: 53px;
+    }
+  }
+
+  p {
+    font-family: 'Larsseit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .image-container {
+    display: grid;
+    align-content: end;
+    padding-top: 5px;
+    &.image-mobile {
+      img {
+        width: 70%;
+        margin: auto;
+      }
+      @media (min-width: 601px) {
+        display: none;
+      }
+    }
+    &.image-desktop {
+      @media (max-width: 600px) {
+      display: none;
+      }
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .text-container {
+    @media (min-width: 1800px) {
+      margin-top: -4rem;
+      z-index: 99;
+    }
+    p {
+      padding-right: 4rem;
+    }
+  }
+
+  .header-text-part {
+    font-family: 'WunderBrick';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 112px;
+    line-height: 129px;
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  .header-parts-container {
+    margin-top: 160px;
+    @media (max-width: 991px) {
+      margin-top: 80px;
+    }
+    .header-mobile {
+      font-family: 'WunderBrick';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 43px;
+      line-height: 50px;
+      text-align: center;
+      padding: 0 1rem;
+      @media (min-width: 601px) {
+        display: none;
+      }
+    }
+    .header-image-first {
+      margin-right: 30px;
+      @media (max-width: 600px) {
+        display: none;
+      }
+    }
+    .header-image-second {
+      margin-left: 30px;
+      @media (max-width: 600px) {
+        display: none;
+      }
+    }
+    .images-flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 80px 1.5rem;
+      @media (max-width: 600px) {
+        >div {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          padding-bottom: 40px;
+        }
+      }
+    }
+    .paragraphs-container {
+      margin-top: 2rem;
+      &.paragraphs-container-mobile {
+        padding-top: 2rem;
+      }
+      @media (max-width: 600px) {
+        &.paragraphs-container-desktop {
+          display: none;
+        }
+      }
+      @media (min-width: 601px) {
+        &.paragraphs-container-mobile {
+          display: none;
+        }
+      }
+    }
+    p {
+      font-family: 'Larsseit';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+      width: 300px;
+    }
+  }
+
+  @media (min-width: 990px) and (max-width: 1400px) {
+    .header-text-part {
+      font-size: 70px;
+      line-height: 90px;
+    }
+
+    .header-parts-container {
+      .images-flex-container {
+        margin: 0;
+      }
+    }
+    p {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 990px) {
+    .header-parts-container {
+      .paragraphs-container {
+        margin-top: -2rem;
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

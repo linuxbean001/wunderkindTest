@@ -1,0 +1,65 @@
+.watch-next-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.watch-next-header {
+  font-size: 4.5rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.watch-next-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.watch-next-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 2;
+  max-width: 360px;
+  min-height: 460px;
+  width: 360px;
+  background-color: #f5ebe1;
+  border-radius: 10px;
+  padding: 1em;
+  color: #191919;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.watch-next-card-link {
+  text-decoration: none;
+  color: #191919;
+}
+
+.watch-next-card-image {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  max-height: 180px;
+  object-fit: cover;
+}
+
+.watch-next-card-header {
+  font-size: 2rem;
+  line-height: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.watch-next-card-description {
+  position: relative;
+  z-index: 2;
+  font-size: 1.25rem;
+}

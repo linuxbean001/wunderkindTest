@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'WunderBrick';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: local('WunderBrickText-Regular'), local('WunderBrickText Regular'),
+  url(/Assets/fonts/WunderBrick/WunderBrick-Text.woff2) format('woff2'),
+  url(/Assets/fonts/WunderBrick/WunderBrick-Text.woff) format('woff');
+}
+
+.how-it-works-partners {
+  background-color: #CC9966;
+  margin-top: 8rem;
+
+  >div {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    @media (max-width: 600px) {
+      padding-top: 1.5rem;
+    }
+  }
+
+  &:before {
+    content: "";
+    background: #CC9966;
+    height: 20rem;
+    transform: skewY(5deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    margin-top: -5.8rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: 'WunderBrick';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    color: #191919;
+    @media (max-width: 600px) {
+      font-size: 26px;
+      line-height: 32px;
+    }
+  }
+
+  .partner-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    @media (max-width: 600px) {
+      img {
+        width: 100px;
+      }
+    }
+  }
+
+  .flex {
+    justify-content: center;
+    padding-top: 5rem;
+    @media (max-width: 600px) {
+      padding-top: 0;
+      padding-bottom: 5rem;
+    }
+  }
+}

@@ -1,0 +1,308 @@
+// Card Css
+.card-list-wrapper .card .card-footer {
+  justify-content: center;
+  margin-top: 30px;
+}
+.card-link-inherit { 
+  text-align: center;
+}
+.card-list-wrapper .card .card-header { 
+  height: 0; 
+}
+.card-list-wrapper .card .card-body {  
+  display: flex; 
+  flex-direction: column;
+  height: 80%;
+  justify-content: space-between;
+  z-index: 3;
+  padding: 20px 10px;
+}
+.card-list-wrapper .card .card-body .card-title {
+  margin-bottom: 15px;
+  background: #25B89D;
+  padding: 7px 0;
+  margin: 0 30px;
+  z-index: 3;
+}
+.card-list-wrapper .card .card-header .card-header-img {  
+  height: 9.6rem;
+}
+.card-list-wrapper .card:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(360deg, black, transparent);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.card-list-wrapper .card {
+  position: relative;
+}
+.card-list-wrapper .card .card-body .card-text { 
+  color: #fff;
+}
+
+.section-resources { 
+  background: #F5EBE1 !important;
+}
+.header-pattern .header-pattern-bg{
+}
+.header-pattern {
+}
+header {
+  padding-top: 2rem;
+}
+.main-header {
+}
+// Card Css end
+.flex {
+  display: flex;
+}
+
+.resources-filter {
+  background-color: #fbfcfd;
+  color: #191919;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .filter-button {
+    width: 25px;
+    height: 25px;
+    background-color: #191919;
+    border: 1px solid #191919;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 15px;
+      height: auto;
+    }
+  }
+  .mobile-filter-dropdown {
+    .clear-option {
+      display: block;
+      color: #191919;
+    }
+  }
+}
+
+//Mobile
+@media (min-width: 0px) and (max-width: 767px) {
+  .resources-filter {
+
+    .mobile-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 30px;
+    }
+
+    .mobile-filter-dropdown {
+      .clear-option {
+        border: 1px solid #d6d6d6;
+        padding: 15px 0;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        display: block;
+      }
+
+      .mobile-filter-options {
+        padding: 1rem;
+
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        .filter-items {
+          padding: 0.5rem 0;
+          border-bottom: 1px solid rgba(25, 25, 25, 0.1);
+          display: flex;
+          justify-content: space-between;
+          cursor: pointer;
+          label {
+            text-transform: capitalize;
+          }
+        }
+      }
+
+      .apply-button {
+        display: flex;
+        justify-content: center;
+        padding: 32px 0;
+
+        button {
+          width: 100px;
+        }
+      }
+    }
+  }
+  .desktop-filter-options {
+    display: none;
+  }
+  .desktop-sorting-options {
+    display: none;
+  }
+}
+//Tablet
+@media (min-width: 768px) and (max-width: 1199px) {
+  .resources-filter {
+    .mobile-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 30px;
+    }
+
+    .mobile-filter-dropdown {
+      .clear-option {
+        border: 1px solid #d6d6d6;
+        padding: 15px 0;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      .mobile-filter-options {
+        padding: 1rem;
+
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        .filter-items {
+          padding: 0.5rem 0;
+          border-bottom: 1px solid rgba(25, 25, 25, 0.1);
+          display: flex;
+          justify-content: space-between;
+          label {
+            text-transform: capitalize;
+          }
+        }
+      }
+
+      .apply-button {
+        display: flex;
+        justify-content: center;
+        padding: 32px 0;
+
+        button {
+          width: 100px;
+        }
+      }
+    }
+  }
+  .desktop-filter-options {
+    display: none;
+  }
+  .desktop-sorting-options {
+    display: none;
+  }
+}
+//Desktop
+@media (min-width: 1200px) {
+  .mobile-header {
+    display: none;
+  }
+
+  .desktop-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 30px;
+  }
+
+  .mobile-filter-dropdown {
+    display: none;
+  }
+
+  .desktop-filter-options {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .desktop-filter-items {
+      font-size: 16px;
+      text-align: center;
+      font-family: "Larsseit", sans-serif;
+      font-weight: 700;
+      line-height: 24px;
+      padding: 0;
+      cursor: pointer;
+
+      .underlined {
+        border-bottom: 2px solid currentColor;
+      }
+    }
+
+    .divider {
+      border-right: 1px solid rgba(25, 25, 25, 0.1);
+    }
+  }
+
+  .desktop-sorting-options {
+    display: flex;
+    border-left: 1px solid rgba(25, 25, 25, 0.1);
+    padding: 0 20px;
+    position: relative;
+    cursor: pointer;
+
+    .sort-button {
+      display: flex;
+      align-items: center;
+      font-family: "Larsseit", sans-serif;
+      font-weight: 700;
+      line-height: 24px;
+    }
+
+    span {
+      vertical-align: top;
+      padding: 0 5px;
+      margin-right: 10px;
+    }
+
+    .filter-sort {
+      position: absolute;
+      top: 3.5rem;
+      right: -2rem;
+      background-color: #fbfcfd;
+      border-radius: 5px;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 1rem 2rem;
+      max-width: 210px;
+      z-index: 1;
+
+      .filter-radio {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid rgba(25, 25, 25, 0.1);
+        display: flex;
+        label {
+          text-transform: capitalize;
+          width: 9.375rem;
+          display: inline-block;
+          padding-right: 1.75rem;
+          cursor: pointer;
+        }
+
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.carousel {
+    overflow: hidden;
+}
+
+.inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+}
+
+.carousel-item {
+    display: inline-flex;
+}
+
+.indicators .prev {
+    position: absolute;
+    left: -70px;
+    top: 25%;
+}
+
+.indicators .next {
+    position: absolute;
+    right: -70px;
+    top: 25%;
+}
+
+.indicators button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

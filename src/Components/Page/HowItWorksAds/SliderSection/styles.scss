@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'WunderBrick';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: local('WunderBrickText-Regular'), local('WunderBrickText Regular'),
+  url(/Assets/fonts/WunderBrick/WunderBrick-Text.woff2) format('woff2'),
+  url(/Assets/fonts/WunderBrick/WunderBrick-Text.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: local('Larsseit'), local('Larsseit'),
+  url(/Assets/fonts/Larsseit/Larsseit.woff2) format('woff2'),
+  url(/Assets/fonts/Larsseit/Larsseit.woff) format('woff');
+}
+
+.how-it-works-ads-slider-section {
+  position: relative;
+  z-index: 1;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  &:before {
+    content: "";
+    background: #191919;
+    height: 20rem;
+    transform: skewY(-5deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    margin-top: -10.8rem;
+  }
+
+  h1 {
+    font-family: 'WunderBrick';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    margin-top: 0;
+    padding-right: 3rem;
+    @media (max-width: 600px) {
+      padding-right: 0;
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+   p {
+     font-family: 'Larsseit';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 26px;
+     color: #FBFCFD;
+     width: 75%;
+     padding-right: 30px;
+     @media (max-width: 600px) {
+       padding-right: 0;
+       width: 100%;
+       font-size: 16px;
+       line-height: 24px;
+       padding-bottom: 5rem;
+     }
+   }
+
+
+  .carousel-root {
+    max-width: 100%;
+  }
+
+  .carousel.carousel-slider {
+    text-align: left;
+    overflow: visible;
+    .prevButton, .nextButton {
+      position: absolute;
+      top: 50%;
+      img {
+        width: 41px;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: #303D78;
+      }
+    }
+    .prevButton {
+      left: -60px;
+      z-index: 1;
+      img {
+        transform: rotateZ(180deg);
+      }
+      @media (max-width: 800px) {
+        left: -1rem;
+      }
+    }
+    .nextButton {
+      right: -60px;
+      @media (max-width: 800px) {
+        right: -1rem;
+      }
+    }
+    .slide {
+      text-align: left;
+    }
+
+    .control-dots {
+      bottom: -5rem;
+      .slider-indicator {
+        width: 30.43px;
+        height: 29.97px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        /* or 144% */
+
+        text-align: center;
+
+        color: #3D55CC;
+        background-color: #303D78;
+        border-radius: 100%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 17px;
+
+        &.selected {
+          color: white;
+          background-color: #25B89D;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.quote-section.img-text-wrap {
+  background-color: white;
+  @media (min-width: 1200px) {
+    padding-top: 3rem;
+    padding-bottom: 9.56rem;
+  }
+  .col-text-content {
+    margin: 0;
+  }
+}
+.quote-section.img-text-wrap {
+  @media (min-width: 0px) and (max-width: 767px) {
+    padding: 1.875rem 0;
+  }
+  .main-image {
+    width: 100%;
+    max-width: 400px;
+    margin: 0;
+    @media (min-width: 0px) and (max-width: 1199px) {
+      display: block;
+      margin: 0 auto;
+      margin-top: 35px;
+      margin-bottom: 45px;
+      height: 315px;
+      width: 315px;
+    }
+    @media (min-width: 1200px) {
+      height: 400px;
+      margin: 0;
+      object-fit: cover;
+    }
+  }
+  .text-content {
+    margin: 0;
+    @media (min-width: 1200px) and (max-width: 1499px) {
+      padding-left: 50px;
+    }
+    .text-content-wrap {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      border-top: 1px solid #191919;
+      border-bottom: 1px solid #191919;
+      margin-left: auto;
+      max-width: 770px;
+      @media (min-width: 1400px) {
+        min-height: 570px;
+      }
+    }
+    h3 {
+      position: relative;
+      margin-top: 0;
+      &:before {
+        content: "“";
+        position: absolute;
+        top: 0;
+        left: -30px;
+      }
+      @media (min-width: 0px) and (max-width: 767px) {
+        font-size: 1.4375rem;
+        line-height: 1.625rem;
+      }
+      @media (min-width: 768px) {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin-bottom: 2rem;
+      }
+      //@media (min-width: 1400px) {
+      //  font-size: 3.125rem;
+      //  line-height: 3.4375rem;
+      //}
+    }
+    p {
+      margin: 0;
+      @media (min-width: 0px) and (max-width: 767px) {
+        font-size: 0.75rem;
+        line-height: 1.09125rem;
+      }
+      @media (min-width: 768px) {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+      }
+    }
+  }
+}

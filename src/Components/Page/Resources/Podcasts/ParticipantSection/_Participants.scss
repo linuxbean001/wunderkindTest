@@ -1,0 +1,51 @@
+.participants-section {
+  background: rgb(246, 235, 226);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  &-title {
+    margin: 0 0 4.41rem 0;
+    text-align: center;
+    font-family: Larsseit;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.625rem;
+
+    @media (max-width: 767px) {
+      line-height: 2.3rem;
+    }
+
+    @media (max-width: 430px) {
+      font-size: 1.7rem;
+      margin: 0 0 2rem 0;
+    }
+
+    @media (max-width: 374px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &-list {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+    @media (max-width: 1439px) {
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 564px) {
+      gap: 37px;
+    }
+  }
+}

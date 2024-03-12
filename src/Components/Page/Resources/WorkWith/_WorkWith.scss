@@ -1,0 +1,117 @@
+// .work-with-section {
+//   position: relative;
+//   height: 228px;
+//   z-index: 9999;
+//   @media (min-width: 0px) and (max-width: 767px) {
+//     height: 275px;
+//     margin-bottom: -3px;
+//   }
+//   @media (min-width: 768px) and (max-width: 1023px) {
+//     position: relative;
+//     top: 60px;
+//     height: 320px;
+//   }
+//   @media (min-width: 1024px) and (max-width: 1399px) {
+//     height: 210px;
+//   }
+// }
+
+// .work-with-container {
+//   position: relative;
+//   z-index: 9999;
+//   top: -18px;
+// }
+
+// .workwith-bg {
+//   position: absolute;
+//   width: 100%;
+//   clip-path: polygon(0 -30%, 170% 20%, 0% 29%, 0% 0%);
+//   @media (min-width: 0px) and (max-width: 374px) {
+//     clip-path: polygon(0 9%, 172% 0%, 188% 29%, 0% 182%);
+//     height: 100%;
+//   }
+//   @media (min-width: 375px) and (max-width: 424px) {
+//    clip-path: polygon(0 14%, 171% 14%, 188% 29%, 0% 182%);
+//    height: 100%;
+//   }
+//   @media (min-width: 425px) and (max-width: 670px) {
+//    clip-path: polygon(0 24%, 171% 31%, 188% 29%, 0% 182%);
+//    height: 100%;
+//   }
+//   @media (min-width: 671px) and (max-width: 767px) {
+//    clip-path: polygon(0 36%, 171% 40%, 188% 29%, 0% 182%);
+//    height: 100%;
+//   }
+//   @media (min-width: 768px) and (max-width: 1023px) {
+//    clip-path: polygon(0 19%, 171% 20%, 188% 29%, 0% 182%);
+//    height: 100%;
+//   }
+// }
+
+// .work-with-heading {
+//   font-family: 'WunderBrickText';
+//   margin-top: 0px; 
+//   font-size: 46px; 
+//   font-style: normal; 
+//   font-weight: 400; 
+//   line-height: 48px; 
+//   letter-spacing: 0px; 
+//   text-align: left; 
+//   @media (min-width: 0px) and (max-width: 767px) {
+//    font-size: 31px;
+//    line-height: 39px;
+//    margin-bottom: 37px;
+//    padding-top: 6px;
+//   }
+// }
+
+// .work-with-subheading {
+//   margin-top: -20px;
+//   font-family: 'Larsseit';
+//   font-size: 20px; 
+//   font-style: normal; 
+//   font-weight: 400;
+//   line-height: 32px;
+//   letter-spacing: 0px; 
+//   text-align: left;
+//   @media (min-width: 0px) and (max-width: 767px) {
+//    font-size: 16px;
+//    line-height: 24px;
+//    margin-bottom: -22px;
+//   }
+// }
+
+// .compaines-work-with {
+//   margin-top: 22px; 
+//   display: flex;
+//   align-items: center; 
+//   justify-content: space-evenly; 
+//   padding-left: 0px;
+//   margin-left: -91px;
+//   @media (min-width: 0px) and (max-width: 767px) {
+//     display: flex;
+//     justify-content: flex-start;
+//     margin-left: 0rem;
+//     margin-right: 0px;
+//     width: 100%;
+//     flex-wrap: wrap;
+//   }
+//   @media (min-width: 768px) and (max-width: 1023px) {
+//     margin-left: -54px;
+//   }
+//   @media (min-width: 1024px) and (max-width: 1399px) {
+//     margin-left: -22px;
+//   }
+
+//   li {
+//     list-style-type: none;
+//     @media (min-width: 0px) and (max-width: 767px) {
+//     list-style-type: none;
+//     vertical-align: middle;
+//     align-self: center;
+//     padding-right: 5%;
+//     display: flex;
+//     margin-top: 18px;
+//   }
+//   }
+// }

@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'WunderBrick';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: local('WunderBrickText-Regular'), local('WunderBrickText Regular'),
+  url(/Assets/fonts/WunderBrick/WunderBrick-Text.woff2) format('woff2'),
+  url(/Assets/fonts/WunderBrick/WunderBrick-Text.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: local('Larsseit'), local('Larsseit'),
+  url(/Assets/fonts/Larsseit/Larsseit.woff2) format('woff2'),
+  url(/Assets/fonts/Larsseit/Larsseit.woff) format('woff');
+}
+
+.how-it-works-team-tools {
+  padding-bottom: 10rem;
+  background-color: #F5EBE0;
+  color: #191919;
+  .container {
+    >div {
+      display: flex;
+    }
+
+    @media (max-width: 600px) {
+      .header-desktop {
+        display: none;
+      }
+    }
+    @media (min-width: 601px) {
+      .header-mobile {
+        display: none;
+      }
+    }
+
+    .header-mobile {
+      h1,h2 {
+        font-size: 24px;
+        line-height: 32px;
+        padding-right: 5rem;
+      }
+    }
+
+    h1,h2 {
+      font-family: 'WunderBrick';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 72px;
+      line-height: 76px;
+    }
+
+    h4 {
+      font-family: 'WunderBrick';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 38px;
+      margin-top: 0;
+      @media (max-width: 600px) {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+
+    p {
+      font-family: 'Larsseit';
+      margin: 1rem 0;
+      margin-right: 2rem;
+    }
+
+    img {
+      max-width: 100%;
+      @media (max-width: 600px) {
+        padding: 0 1rem;
+      }
+    }
+
+    .carousel-root {
+      max-width: 100%;
+      @media (max-width: 990px) {
+        margin-top: 3rem;
+      }
+      @media (max-width: 600px) {
+        margin: auto;
+      }
+    }
+
+    .carousel.carousel-slider {
+      text-align: left;
+      overflow: visible;
+      .prevButton, .nextButton {
+        position: absolute;
+        top: 45%;
+        img {
+          width: 30px;
+          background-color: white;
+          border-radius: 50%;
+          padding: 5px;
+        }
+      }
+      .prevButton {
+        left: -5rem;
+        img {
+          transform: rotateZ(180deg);
+        }
+        @media (max-width: 600px) {
+          left: -2rem;
+        }
+      }
+      .nextButton {
+        right: -5rem;
+        @media (max-width: 600px) {
+          right: -1rem;
+        }
+      }
+
+      .control-dots {
+        bottom: -4rem;
+        .dot {
+          background-color: #191919;
+        }
+      }
+    }
+
+    .quote-container {
+      text-align: left;
+      padding: 1rem 0;
+    }
+  }
+}

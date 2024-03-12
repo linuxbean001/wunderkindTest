@@ -1,0 +1,28 @@
+.jobs-filter {
+    .desktop-filter-items {
+        span {
+            display: flex;
+            .filter-button {
+                margin-left: 15px;
+                padding-top: 3px;
+            }
+        }
+    }
+    .desktop-sorting-options {
+        .filter-sort {
+            @media (min-width: 1025px) {
+                z-index: 3;
+            }
+        }
+    }
+    .mobile-filter-options {
+        .filter-items {
+            cursor: pointer;
+            label {
+                &.underlined {
+                    border-bottom: 2px solid currentColor;
+                }
+            }
+        }
+    }
+}

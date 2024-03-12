@@ -1,0 +1,44 @@
+.process-block {
+    text-align: center;
+    position: relative;
+    z-index: 60;
+    background-color: #191919;
+    padding: 3.75rem 0;
+    @media (min-width: 0px) and (max-width: 767px){
+        text-align: left;
+    }
+    @media (min-width: 768px) and (max-width: 1024px){
+        padding: 4.9rem 0;
+    }
+    @media (min-width: 1025px){
+        padding: 10rem 0;
+    }
+    .process-num {
+        margin-top: 2.5rem;
+        margin-bottom: 0.5rem;
+        line-height: 1;
+        font-weight: 500;
+        font-size: 3rem;
+        @media (min-width: 0px) and (max-width: 767px){
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        @media (min-width: 768px) and (max-width: 1024px){
+            font-size: 4.5rem;
+            margin-top: 2rem;
+        }
+        @media (min-width: 1025px){
+            font-size: 5.5rem;
+        }
+    }
+    .process-txt {
+        @media (min-width: 0px) and (max-width: 767px){
+            margin: 0;
+            font-size: 1rem;
+        }
+        @media (min-width: 768px) and (max-width: 1024px){
+        }
+        @media (min-width: 1025px){
+        }
+    }
+}

@@ -1,0 +1,1119 @@
+[[redirects]]
+  from = "/uk/blog/*"
+  to = "/blog/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/?t=1&mid=NDQ1LUZKVi0zNTM6MDo4MjYyOjUwNDY5OjA6MTExOTU6OToxMjQ1ODozODkyNDkyLTE6bnVsbA%3D%3D"
+  to = "/404.html"
+  status = 403
+  force = true
+
+[[redirects]]
+  from = "/trk?t=1&mid=NDQ1LUZKVi0zNTM6MDo4MjYyOjUwNDY5OjA6MTExOTU6OToxMjQ1ODozODkyNDkyLTE6bnVsbA%3D%3D"
+  to = "/404.html"
+  status = 403
+  force = true
+
+[[redirects]]
+  from = "/trk"
+  to = "/404.html"
+  status = 403
+  force = true
+
+[[redirects]]
+  from = "/wunderkind-eu-visitor/?t=1&mid=NDQ1LUZKVi0zNTM6MDo4MjYyOjUwNDY5OjA6MTExOTU6OToxMjQ1ODozODkyNDkyLTE6bnVsbA%3D%3D"
+  to = "/404.html"
+  status = 403
+  force = true
+
+[[redirects]]
+  from = "/ad-lp-3/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/case-studies/kurt-geiger-explores-build-v-buy-wunderkind-smashes-in-house-email-revenue-solution/"
+  to = "/resources/case-studies/kurt-geiger"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/case-studies/seaworld-increases-bookings-by-5x-with-wunderkind/"
+  to = "/resources/case-studies/seaworld"
+  status = 301
+  force = true
+
+# Webinar marketo redirects
+
+[[redirects]]
+  from = "/resources/guides/2024-marketing-predictions-guide/"
+  to = "https://convert.wunderkind.co/2024-marketing-predictions-guide"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/guides/marketers-guide-to-power-of-performance-marketing/"
+  to = "https://convert.wunderkind.co/marketers-guide-to-power-of-performance-marketing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/guides/the-power-of-performance-marketing-in-2024"
+  to = "https://convert.wunderkind.co/marketers-guide-to-power-of-performance-marketing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/webinars/bfcm-consumer-signals-webinar-2024/"
+  to = "https://convert.wunderkind.co/bfcm-consumer-signals-webinar-2024"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/webinars/luxury-consumer-insights-webinar-2023/"
+  to = "https://convert.wunderkind.co/Luxury-Consumer-Insights-Webinar-2023.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/webinars/cmo-state-of-the-union-webinar-2023/"
+  to = "https://convert.wunderkind.co/cmo-state-of-the-union-webinar-2023"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/article/transform-holiday-campaigns-into-long-term-success/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/webinars/the-holiday-edge-actionable-shopping-insights-for-black-friday-cyber-monday-2023/"
+  to = "https://convert.wunderkind.co/webinar_The-Holiday-Edge-Actionable-Shopping-Insights-for-Black-Friday-Cyber-Monday-2023.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/webinars/emarketer-tech-talk-webinar-how-to-supercharge-performance-marketing-results/"
+  to = "https://convert.wunderkind.co/webinar_eMarketer-Tech-Talk-Webinar-How-to-Supercharge-Performance-Marketing-Results"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/webinars/ai-evolution-the-power-of-change/"
+  to = "https://convert.wunderkind.co/webinar_AI-Evolution-Harnessing-the-Power-of-AI-for-Positive-Change"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/webinars/5-predictions-for-ecommerce-marketers-in-2023/"
+  to = "https://convert.wunderkind.co/webinar_5-Predictions-for-eCommerce-Marketers-in-2023"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/webinars/cmo-sotu-webinar/"
+  to = "https://convert.wunderkind.co/webinar_CMO-State-of-the-Union-2022"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/webinars/emarsys-masterclass-webinar/"
+  to = "https://convert.wunderkind.co/webinar_Scale-Email-into-a-Top-Revenue-Channel-with-the-Power-of-Identity"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/webinars/digital-accessibility-reaching-the-forgotten-digital-audience/"
+  to = "https://convert.wunderkind.co/webinar_Digital-Accessibility-Reaching-the-Forgotten-Digital-Audience"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/webinars/the-business-of-inclusivity-at-wunder-2023/"
+  to = "https://convert.wunderkind.co/The-Business-of-Inclusivity-at-Wunder-2023.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/webinars/how-to-grow-your-brand-alongside-your-customer-at-wunder-2023/"
+  to = "https://convert.wunderkind.co/How-to-Grow-Your-Brand-Alongside-Your-Customer-At-Wunder-2023.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/webinars/marketing-state-of-the-union-wunder-2023/"
+  to = "https://convert.wunderkind.co/Marketing-State-of-the-Union-at-Wunder-2023.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/webinars/go-beyond-the-views-wunder-2023/"
+  to = "https://convert.wunderkind.co/Go-Beyond-the-Views-Wunder-2023.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/webinars/building-a-truly-connected-customer-journey-wunder-2023/"
+  to = "https://convert.wunderkind.co/Building-a-Truly-Connected-Customer-Journey-Wunder-2023.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/webinars/boosting-owned-channel-and-loyalty-performance-with-individualization-wunder-2023/"
+  to = "https://convert.wunderkind.co/Boosting-Owned-Channel-and-Loyalty-Performance-with-Individualization-Wunder-2023.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/webinars/leveling-up-with-ai/"
+  to = "https://convert.wunderkind.co/Leveling-Up-Your-Teams-and-Customer-Experiences-with-AI-Webinar.html"
+  status = 301
+  force = true
+
+# Open roles redirects
+
+[[redirects]]
+  from = "/uk/open-roles/5083656"
+  to = "https://www.wunderkind.co/open-roles/"
+  status = 301
+
+[[redirects]]
+  from = "/uk/open-roles/5029840"
+  to = "https://www.wunderkind.co/open-roles/"
+  status = 301
+
+[[redirects]]
+  from = "/uk/open-roles/4884337"
+  to = "https://www.wunderkind.co/open-roles/"
+  status = 301
+
+[[redirects]]
+  from = "/uk/open-roles/4417951"
+  to = "https://www.wunderkind.co/open-roles/"
+  status = 301
+
+[[redirects]]
+  from = "/open-roles/5122339/"
+  to = "https://www.wunderkind.co/open-roles/"
+  status = 301
+
+[[redirects]]
+  from = "/open-roles/5122339"
+  to = "https://www.wunderkind.co/open-roles/"
+  status = 301
+
+[[redirects]]
+  from = "/open-roles/5116229"
+  to = "https://www.wunderkind.co/open-roles/"
+  status = 301
+
+[[redirects]]
+  from = "/open-roles/5112482/"
+  to = "https://www.wunderkind.co/open-roles/"
+  status = 301
+
+[[redirects]]
+  from = "/open-roles/5112482"
+  to = "https://www.wunderkind.co/open-roles/"
+  status = 301
+
+[[redirects]]
+  from = "/open-roles/5108206/"
+  to = "https://www.wunderkind.co/open-roles/"
+  status = 301
+
+[[redirects]]
+  from = "/open-roles/5108206"
+  to = "https://www.wunderkind.co/open-roles/"
+  status = 301
+
+[[redirects]]
+  from = "/open-roles/5085742/"
+  to = "https://www.wunderkind.co/open-roles/"
+  status = 301
+
+[[redirects]]
+  from = "/open-roles/5085742"
+  to = "https://www.wunderkind.co/open-roles/"
+  status = 301
+
+[[redirects]]
+  from = "/open-roles/5083656/"
+  to = "https://www.wunderkind.co/open-roles/"
+  status = 301
+
+[[redirects]]
+  from = "/open-roles/5083656"
+  to = "https://www.wunderkind.co/open-roles/"
+  status = 301
+
+[[redirects]]
+  from = "/open-roles/5069477"
+  to = "https://www.wunderkind.co/open-roles/"
+  status = 301
+
+[[redirects]]
+  from = "/open-roles/5029840"
+  to = "https://www.wunderkind.co/open-roles/"
+  status = 301
+
+[[redirects]]
+  from = "/open-roles/4981597/"
+  to = "https://www.wunderkind.co/open-roles/"
+  status = 301
+
+[[redirects]]
+  from = "/open-roles/4884337"
+  to = "https://www.wunderkind.co/open-roles/"
+  status = 301
+
+[[redirects]]
+  from = "/open-roles/4723212/"
+  to = "https://www.wunderkind.co/open-roles/"
+  status = 301
+
+[[redirects]]
+  from = "/open-roles/4417951/"
+  to = "https://www.wunderkind.co/open-roles/"
+  status = 301
+
+[[redirects]]
+  from = "/open-roles/4417951"
+  to = "https://www.wunderkind.co/open-roles/"
+  status = 301
+
+# End of open roles redirects
+
+[[redirects]]
+  from = "https://www.wunderkind.co/resources/case-studies/kate-spade/"
+  to = "https://www.wunderkind.co/resources/research-study/luxury-retail-pulse-how-shoppers-are-spending-on-luxury-brands/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/get-a-demo/"
+  to = "https://www.wunderkind.co/resources/get-started/"
+  status = 301
+
+[[redirects]]
+  from = "/covid-19/"
+  to = "https://www.wunderkind.co/"
+  status = 301
+
+[[redirects]]
+  from = "/2023predictions/"
+  to = "https://www.wunderkind.co/resources/research-study/market-outlook-2023/"
+  status = 301
+
+[[redirects]]
+  from = "/2023-marketing-predictions/"
+  to = "https://www.wunderkind.co/resources/research-study/market-outlook-2023/"
+  status = 301
+
+[[redirects]]
+  from = "/bfcm-2022/"
+  to = "/resources/guides/bfcm-insights-guide-2023/"
+  status = 301
+
+[[redirects]]
+  from = "/homage-wunderkind-klaviyo/"
+  to = "https://www.wunderkind.co/"
+  status = 301
+
+[[redirects]]
+  from = "/resources/webinars/wunderkind-tinuiti-webinar-5-tips-to-grow-your-email-list/"
+  to = "https://www.wunderkind.co/resources/webinars/"
+  status = 301
+
+[[redirects]]
+  from = "/resources/the-ultimate-vendor-sms-rfp-guide"
+  to = "https://www.wunderkind.co/resources/"
+  status = 301
+
+[[redirects]]
+  from = "/resources/research-study/gdpr-one-year-later/"
+  to = "https://www.wunderkind.co/resources/research-study/"
+  status = 301
+
+[[redirects]]
+  from = "/resources/research-study/forrester-report-identity-resolution-in-modern-b2c-marketing/"
+  to = "https://www.wunderkind.co/resources/research-study/"
+  status = 301
+
+[[redirects]]
+  from = "/resources/how-winning-marketers-maximize-sms-performance"
+  to = "/resources/guides/how-winning-marketers-maximize-text-performance/"
+  status = 301
+
+[[redirects]]
+  from = "/resources/guides/the-manual-to-people-based-marketing/"
+  to = "https://www.wunderkind.co/resources/guides/"
+  status = 301
+
+[[redirects]]
+  from = "/resources/guides/a-marketers-guide-to-behavioral-email/"
+  to = "https://www.wunderkind.co/resources/guides/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/article/you-say-it-best-when-you-say-nothing-at-all/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/article/you-already-know-who-your-best-customers-are/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/article/with-black-friday-and-cyber-week-just-around-the-corner/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/article/what-does-loyal-customer-look-like/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/article/revenge-shopping/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/article/marketing-during-recession/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/article/inflation-and-the-retail-recession-podcast-episode/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/article/how-to-capture-consumer-attention-improve-online-ad-performance/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/article/gift-guide/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/article/european-for-personalisation/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/article/consolidating-one-to-one-marketing-across-text-and-email/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/article/black-friday-predictions/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog-category/features/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/uk/blog-category/features/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog-category/marketing-trends/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/uk/blog-category/marketing-trends/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/uk/blog-category/events/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog-category/news/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/uk/blog-category/news/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog-category/people-culture/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/uk/blog-category/people-culture/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog-category/research/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/uk/blog-category/research/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/uk/blog-category/product-launch/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog-category/thought-leadership/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/uk/blog-category/thought-leadership/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/article/national-suicide-prevention-week-at-wunderkind/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/uk/resources/case-study/case-mate-case-study/"
+  to = "https://www.wunderkind.co/uk/resources/case-studies/case-mate/"
+  status = 301
+
+[[redirects]]
+  from = "/resources/case-study/wunderkind-triggered-email-and-text-drive-over-20-of-revenue-for-corkcicle/"
+  to = "https://www.wunderkind.co/resources/case-studies/wunderkind-triggered-email-and-text-drive-over-20-of-revenue-for-corkcicle/"
+  status = 301
+
+[[redirects]]
+  from = "/resources/case-study/wunderkind-rag-bone/"
+  to = "https://www.wunderkind.co/resources/case-studies/rag-and-bone/"
+  status = 301
+
+[[redirects]]
+  from = "/uk/resources/rag-bone-case-study"
+  to = "https://www.wunderkind.co/uk/resources/case-studies/rag-and-bone/"
+  status = 301
+
+[[redirects]]
+  from = "/resources/case-study/refinery29-collaborates-with-bouncex-to-scale-and-expand-email-footprint/"
+  to = "https://www.wunderkind.co/resources/case-studies/refinery29/"
+  status = 301
+
+[[redirects]]
+  from = "/resources/case-study/jlo-beauty/"
+  to = "https://www.wunderkind.co/resources/case-studies/jlo-beauty/"
+  status = 301
+
+[[redirects]]
+  from = "/resources/case-study/identification-personalization-scalable-revenue-for-tribune-publishing/"
+  to = "/resources/case-studies/tribune-publishing/"
+  status = 301
+
+[[redirects]]
+  from = "/uk/resources/case-study/identification-personalization-scalable-revenue-for-tribune-publishing/"
+  to = "/uk/resources/case-studies/tribune-publishing/"
+  status = 301
+
+[[redirects]]
+  from = "/resources/case-study/felina-wunderkind/"
+  to = "https://www.wunderkind.co/resources/case-studies/"
+  status = 301
+
+[[redirects]]
+  from = "/resources/case-study/case-mate-case-study/"
+  to = "https://www.wunderkind.co/resources/case-studies/case-mate/"
+  status = 301
+
+[[redirects]]
+  from = "/resources/case-studies/elvie/"
+  to = "https://www.wunderkind.co/resources/case-studies/"
+  status = 301
+
+[[redirects]]
+  from = "/resources/case-studies/capitol-lighting-wunderkind/"
+  to = "https://www.wunderkind.co/resources/case-studies/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/*"
+  to = "https://wkd.wpengine.com/blog/:splat"
+  status = 200
+  force = true
+  [redirects.headers]
+    X-From = "Netlify"
+
+[[redirects]]
+  from = "https://www.wunderkind.co/resources/get-a-demo/"
+  to = "https://www.wunderkind.co/resources/get-started/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/get-started/wunderkind/"
+  to = "/resources/get-started/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/futurecommerce/"
+  to = "https://www.wunderkind.co/resources/research-study/cmo-state-of-the-union/?utm_source=future-commerce&utm_medium=podcast&utm_campaign=cmo-sotu-download"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.wunderkind.co/CMOSOTU/"
+  to = "https://www.wunderkind.co/resources/research-study/cmo-state-of-the-union/?utm_source=emarketer&utm_medium=paidplacement&utm_campaign=tech-talk-webinar"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.wunderkind.co/cmosotu/"
+  to = "https://www.wunderkind.co/resources/research-study/cmo-state-of-the-union/?utm_source=emarketer&utm_medium=paidplacement&utm_campaign=tech-talk-webinar"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.wunderkind.co/consumerspending"
+  to = "https://www.wunderkind.co/resources/research-study/2023-consumer-spending-report/?utm[…]eter&utm_medium=paidplacement&utm_campaign=tech-talk-webinar"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.wunderkind.co/cmo-sotu-webinar-registration/"
+  to = "https://www.wunderkind.co/resources/webinars/cmo-sotu-webinar/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.wunderkind.co/customeridentity/"
+  to = "https://www.wunderkind.co/resources/guides/personalization-in-a-privacy-first-landscape/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/dtc/"
+  to = "https://www.wunderkind.co/resources/research-study/2022-consumer-insights-report/?utm_source=dtc&utm_medium=podcast&utm_campaign=cir-2022"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.wunderkind.co/blog/article/how-to-revive-an-abandoned-basket/"
+  to = "https://www.wunderkind.co/blog/article/abandoned-cart-emails-5-ways-to-win-back-your-customers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.wunderkind.co/partners"
+  to = "https://partners.wunderkind.co"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.wunderkind.co/blog/article/fighting-the-pink-tax/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.wunderkind.co/blog/article/3-triggered-email-stats-to-know/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.wunderkind.co/blog/article/equality-impact-award-winner-naomi-meyer/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.wunderkind.co/blog/article/bouncex-2019-black-friday-cyber-monday-predictions/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.wunderkind.co/blog/article/bouncex-is-upbranding-to-wunderkind/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.wunderkind.co/solutions/multichannel-for-retailers/"
+  to = "https://www.wunderkind.co/how-it-works/performance-marketing-solutions-for-ecommerce/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.wunderkind.co/uk/solutions/multichannel-for-retailers/"
+  to = "https://www.wunderkind.co/uk/how-it-works/performance-marketing-solutions-for-ecommerce/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.wunderkind.co/solutions/ads-for-publishers/"
+  to = "https://www.wunderkind.co/how-it-works/advertising-solutions-for-advertisers-and-publishers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.wunderkind.co/uk/solutions/ads-for-publishers/"
+  to = "https://www.wunderkind.co/uk/how-it-works/advertising-solutions-for-advertisers-and-publishers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.wunderkind.co/solutions/ads-for-advertisers/"
+  to = "https://www.wunderkind.co/how-it-works/advertising-solutions-for-advertisers-and-publishers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.wunderkind.co/uk/solutions/ads-for-advertisers/"
+  to = "https://www.wunderkind.co/uk/how-it-works/advertising-solutions-for-advertisers-and-publishers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.wunderkind.co/solutions/multichannel-for-travel/"
+  to = "https://www.wunderkind.co/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.wunderkind.co/luxuryreport/"
+  to = "https://www.wunderkind.co/resources/research-study/luxury-retail-pulse-how-shoppers-are-spending-on-luxury-brands?utm_source=wunderkind-infographic&utm_medium=qr-code&utm_campaign=luxury-report-2023"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.wunderkind.co/uk/solutions/multichannel-for-travel/"
+  to = "https://www.wunderkind.co/uk/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.wunderkind.co/uk/solutions/multichannel-for-gaming/"
+  to = "https://www.wunderkind.co/uk/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-category/*"
+  to = "https://wkd.wpengine.com/blog-category/:splat"
+  status = 200
+  force = true
+  [redirects.headers]
+    X-From = "Netlify"
+
+[[redirects]]
+  from = "/uk/blog/*"
+  to = "https://wkd.wpengine.com/uk/blog/:splat"
+  status = 200
+  force = true
+  [redirects.headers]
+    X-From = "Netlify"
+
+[[redirects]]
+  from = "/uk/blog-category/*"
+  to = "https://wkd.wpengine.com/uk/blog-category/:splat"
+  status = 200
+  force = true
+  [redirects.headers]
+    X-From = "Netlify"
+
+[[redirects]]
+  from = "/sellers.json"
+  to = "https://behave.com/wunderkind_sellers.json"
+  status = 200
+
+[[redirects]]
+  from = "/ads.txt"
+  to = "https://behave.com/ads.txt"
+  status = 200
+
+[[redirects]]
+  from = "https://www.wunderkind.co/blog/article/transform-holiday-campaigns-into-long-term-success/"
+  to = "https://www.wunderkind.co/blog/"
+  status = 301
+  force = true
+
+[[edge_functions]]
+  path = "/*"
+  function = "blockUserAgent"
+
+# Old site redirects
+
+[[redirects]]
+  from = "/ads-agencies-solutions/"
+  to = "/solutions/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/behavioral-cms/"
+  to = "/solutions/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/behavioral-email/"
+  to = "/solutions/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/consumer-id-graph/"
+  to = "/solutions/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/"
+  to = "/solutions/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/publishers-solutions/"
+  to = "/solutions/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/holidays"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/get-a-demo/"
+  to = "/resources/get-started/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/uk/resources/get-a-demo/"
+  to = "/uk/resources/get-started/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/press/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/thinktank/"
+  to = "/resources/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/thinktank/?filter=Success%20Stories"
+  to = "/resources/?filter=Success%20Stories"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/careers/"
+  to = "/open-roles/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/behavioural-cms/"
+  to = "/uk/solutions/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/behavioural-email/"
+  to = "/uk/solutions/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/think-tank-post/*"
+  to = "/resources"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/partner/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/careers/job-details/"
+  query = {id = ":id"}
+  to = "/open-roles/:id"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/careers/job-details/"
+  to = "/open-roles/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/platform-partners/"
+  to = "/privacy/platform-partners/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/sms_terms/"
+  to = "/terms/sms/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/sms-aup/"
+  to = "/terms/sms-aup/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/privacy/opt-out-data-processing/"
+  to = "/privacy/opt-out-of-data-processing/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/privacy/data-processing-opt-confirmation/"
+  to = "/privacy/opt-out-of-data-processing-confirmation/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/solutions/"
+  to = "/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/uk/solutions/"
+  to = "/uk/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/bouncex-ads-supplier-terms-of-service/"
+  to = "/terms/ads-suppliers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/bxc_terms/"
+  to = "/terms/connect-terms/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gdpr_dpa_0418/"
+  to = "/privacy/wunderkind-dpa/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gdpr_0418/"
+  to = "/privacy/wunderkind-dpa/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/core_aup/"
+  to = "/terms/core_aup/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/core_terms/"
+  to = "/terms/core/"
+  status = 301
+  force = true
+  
+[[redirects]]
+  from = "/terms/sms/"
+  to = "/terms/text/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/uk/bxc_aup/"
+  to = "/uk/terms/connect-aup/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/bxc_aup/"
+  to = "/terms/connect-aup/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/uk/terms/sms/"
+  to = "/uk/terms/text/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/terms/sms-aup/"
+  to = "/terms/text-aup/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/uk/terms/sms-aup/"
+  to = "/uk/terms/text-aup/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/wunderkind-vince/"
+  to = "/resources/csuite-series/wunderkind-vince/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/uk/resources/wunderkind-vince/"
+  to = "/uk/resources/csuite-series/wunderkind-vince/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/wunderkind-nest-new-york/"
+  to = "/resources/csuite-series/wunderkind-nest-new-york/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/uk/resources/wunderkind-nest-new-york/"
+  to = "/uk/resources/csuite-series/wunderkind-nest-new-york/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/growing-your-sms-opt-ins-without-sacrificing-email"
+  to = "https://www.wunderkind.co/resources/"
+  status = 301
+
+[[redirects]]
+  from = "/resources/growing-your-text-opt-ins-without-sacrificing-email/"
+  to = "/resources/guides/growing-your-text-opt-ins-without-sacrificing-email/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/uk/resources/growing-your-text-opt-ins-without-sacrificing-email/"
+  to = "/uk/resources/guides/growing-your-text-opt-ins-without-sacrificing-email/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/wunderkind-list-growth/"
+  to = "/resources/guides/wunderkind-list-growth/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/uk/resources/wunderkind-list-growth/"
+  to = "/uk/resources/guides/wunderkind-list-growth/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/owning-your-owned-channels/"
+  to = "/resources/guides/owning-your-owned-channels/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/uk/resources/owning-your-owned-channels/"
+  to = "/uk/resources/guides/owning-your-owned-channels/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/the-ultimate-vendor-text-rfp-guide/"
+  to = "/resources/guides/the-ultimate-vendor-text-rfp-guide/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/uk/resources/the-ultimate-vendor-text-rfp-guide/"
+  to = "/uk/resources/guides/the-ultimate-vendor-text-rfp-guide/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/text-message-marketing-playbook-to-boost-revenue/"
+  to = "/resources/guides/text-message-marketing-playbook-to-boost-revenue/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/uk/resources/text-message-marketing-playbook-to-boost-revenue/"
+  to = "/uk/resources/guides/text-message-marketing-playbook-to-boost-revenue/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/uk/text-message-marketing-playbook/"
+  to = "/resources/guides/text-message-marketing-playbook-to-boost-revenue/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/uk/about-our-authors/"
+  to = "/about-our-authors/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/guides/get-a-demo/"
+  to = "/resources/get-started/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/uk/resources/guides/get-a-demo/"
+  to = "/uk/resources/get-started/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.wunderkind.co/trk?t=1&mid=NDQ1LUZKVi0zNTM6MDo4MjYyOjUwNDY5OjA6MTExOTU6OToxMjQ1ODozODkyNDkyLTE6bnVsbA%3D%3D"
+  to = "/404.html"
+  status = 403
+  force = true
+
+[[redirects]]
+  from = "https://www.wunderkind.co/t=1&mid=NDQ1LUZKVi0zNTM6MDo4MjYyOjUwNDY5OjA6MTExOTU6OToxMjQ1ODozODkyNDkyLTE6bnVsbA%3D%3D"
+  to = "/404.html"
+  status = 403
+  force = true

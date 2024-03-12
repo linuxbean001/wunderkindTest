@@ -1,0 +1,131 @@
+.btn{
+    display: block;
+    border-radius: 35px;
+    color: white;
+    border: 1px solid white;
+    padding: 0px 29.025px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    min-height: 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    backface-visibility: hidden;
+    outline: 1px solid transparent;
+    transform: translateZ(0);
+    cursor: pointer;
+    transform: translateZ(0);
+    overflow: hidden;
+    backface-visibility: hidden;
+    .btn-lbl-helper{
+        opacity: 0;
+        pointer-events: none;
+        max-height: 40px;
+    }
+    &:before{
+        content: '';
+        background: white;
+        border-radius: 35px;
+        transform: translateY(100%);
+        z-index: 1;
+    }
+    span{
+        text-align: center;
+        z-index: 2;
+        line-height: 40px;
+        border-radius: 35px;
+        backface-visibility: hidden;
+        outline: 1px solid transparent;
+        &.out{
+            transform: translateY(100%);
+            color: #191919;
+        }
+    }
+    &:before, span{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    &:before{
+        transition: all .4s cubic-bezier(0.640, -0.095, 0.295, 1.065);
+    }
+    .in{
+        transition: all .5s cubic-bezier(0.640, -0.095, 0.295, 1.065);
+    }
+    .out{
+        transition: all .6s cubic-bezier(0.640, -0.095, 0.295, 1.065);
+    }
+
+    &.btn-fill{
+        color: #191919;
+        background: white;
+        border: 0px;
+        &:before{
+            background: #191919;
+        }
+        span{
+            &.in{
+                background: white;
+            }
+            &.out{
+                color: white;
+            }
+        }
+    }
+    
+    &.btn-dark{
+        color: white;
+        border: 0px;
+        &:before{
+            background: white;
+        }
+        span{
+            &.in{
+                background: #191919;
+            }
+            &.out{
+                color: #191919;
+            }
+        }
+    }
+    &.btn-fill-dark{
+        color: #191919;
+        background: white;
+        &:before{
+            background: #191919;
+        }
+        span{
+            &.out{
+                color: white;
+            }
+        }
+    }
+    
+    @media (min-width: 1025px){
+        &:hover{
+            &:before, .out{
+                transform: translateY(0%);
+            }
+            .in{
+                transform: translateY(-100%);
+            }
+            &.btn-fill{
+                background: transparent;
+            }
+        }
+    }
+}
+
+
+.mega-menu-open{
+    .btn.btn-fill span.in{
+        background: #191919;
+    }
+}
+
+

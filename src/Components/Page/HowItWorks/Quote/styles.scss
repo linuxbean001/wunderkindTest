@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'WunderBrick';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: local('WunderBrickText-Regular'), local('WunderBrickText Regular'),
+  url(/Assets/fonts/WunderBrick/WunderBrick-Text.woff2) format('woff2'),
+  url(/Assets/fonts/WunderBrick/WunderBrick-Text.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: local('Larsseit'), local('Larsseit'),
+  url(/Assets/fonts/Larsseit/Larsseit.woff2) format('woff2'),
+  url(/Assets/fonts/Larsseit/Larsseit.woff) format('woff');
+}
+
+.quote-container {
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  padding-left: 7px;
+  padding-right: 21px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media (max-width: 600px) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .quote {
+    font-family: 'WunderBrick';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    @media (max-width: 600px) {
+      font-size: 23px;
+      line-height: 32px;
+    }
+  }
+
+  .author {
+    font-family: 'Larsseit';
+    margin: 1rem 0;
+    @media (max-width: 600px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  .author-position {
+    font-family: 'Larsseit';
+    @media (max-width: 600px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

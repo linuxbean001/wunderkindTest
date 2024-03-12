@@ -1,0 +1,38 @@
+.client-referral-thank-you-section {
+  position: relative;
+  margin-top: -.5rem;
+
+  @media (min-width: 0px) and (max-width: 767px) {
+    padding-bottom: 6rem;
+    padding-top: 3rem;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    padding-bottom: 5rem;
+    padding-top: 1rem;
+  }
+
+  @media (min-width: 1025px) {
+    padding-bottom: 9.5rem;
+    padding-top: 4.75rem;
+  }
+
+  font-family: 'Larsseit', sans-serif;
+
+  h4 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    font-family: 'Larsseit', sans-serif;
+    margin: 0;
+    a {
+      color: white;
+    }
+  }
+
+  p {
+    font-family: 'Larsseit', sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+  }
+
+}

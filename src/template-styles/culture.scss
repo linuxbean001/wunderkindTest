@@ -1,0 +1,140 @@
+.culture-bg-img {
+    position: absolute;
+    z-index: -2;
+    left: 0;
+    width: 100%;
+    height: 110%;
+}
+
+.culture-semi-circle {
+    position: absolute;
+    z-index: -1;
+    width: 60%;
+    height: 100%;
+    right: 0;
+}
+
+.full-page-container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+.header-desc-container {
+    max-width: 45%;
+}
+
+.culture-main-header {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+	font-family: "WunderBrickDisplay";
+}
+
+.culture-description {
+    font-size: 20px;
+    line-height: 32px;
+    font-family: "Larsseit", sans-serif;
+}
+
+.small-desc-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+.culture-small-desc {
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.culture-btn {
+    background-color: #3D55CC;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+}
+
+@media (max-width: 1200px) {
+    .full-page-container {
+        flex-direction: column;
+    }
+
+    .culture-bg-img {
+        height: 130%;
+    }
+
+    .culture-semi-circle {
+        display: none;
+    }
+
+    .header-desc-container {
+        max-width: 100%;
+    }
+
+    .culture-main-header {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    .small-desc-btn-container {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .culture-description {
+        margin-top: 64px;
+    }
+}
+
+@media (max-width: 570px) {
+    .full-page-container {
+        padding: 0;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .culture-bg-img {
+        height: 180%;
+    }
+
+    .full-page-container {
+        padding: 0;
+    }
+
+    .culture-main-header:first-child {
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .culture-main-header:nth-child(2) {
+        font-size: 48px;
+    }
+
+    .culture-main-header:nth-child(3) {
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .culture-description {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .culture-small-desc {
+        font-size: 25px;
+        line-height: 31px;
+    }
+
+    .header-desc-container {
+        max-width: 100%;
+
+    }
+
+    .small-desc-btn-container {
+        max-width: 100%;
+        margin: 0;
+    }
+}

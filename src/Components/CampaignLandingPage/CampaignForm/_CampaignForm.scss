@@ -1,0 +1,253 @@
+.download-form {
+  width: 100%;
+  color: #191919;
+
+  .download-form-title {
+    font-weight: 500;
+    
+    @media (min-width: 0px) and (max-width: 767px){
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+    @media (min-width: 768px){
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+
+  }
+  
+  .download-form-subtitle {
+    margin: 12 0px;
+    @media (min-width: 0px) and (max-width: 767px){
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+    @media (min-width: 768px){
+      font-size: 1.125rem;
+      line-height: 1.875rem;
+    }
+  }
+
+  form {
+    width: 100% !important;
+    
+    @media (min-width: 0px) and (max-width: 767px){
+      margin-top: 2rem;
+    }
+    @media (min-width: 768px) and (max-width: 1024px){
+      margin-top: 3rem;
+    }
+    @media (min-width: 1025px){
+      margin-top: 3rem;
+    }
+
+    .mktoFieldDescriptor.mktoFormCol, .mktoFieldWrap {
+      width: 100% !important;
+    }
+
+    .mktoError {
+      clear: both;
+    }
+
+    input[type="text"], input[type="email"] {
+	    font-family: 'Larsseit', sans-serif !important;
+      background: none;
+      color: #191919;
+      display: block;
+      width: 100% !important;
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid #191919;
+      padding: 20px 10px 11px 1px;
+      
+      @media (min-width: 0px) and (max-width: 767px){
+        font-size: 1rem;
+        height: 50px;
+      }
+      @media (min-width: 768px){
+        font-size: 1.5rem;
+      }
+    }
+
+    select {
+      font-family: 'Larsseit', sans-serif !important;
+      background: none;
+      color: #191919;
+      display: block;
+      width: 100% !important;
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid #191919;
+      padding: 20px 10px 11px 1px;
+      
+      @media (min-width: 0px) and (max-width: 767px){
+        font-size: 1rem !important;
+        height: 50px;
+      }
+      @media (min-width: 768px){
+        font-size: 1.5rem !important;
+      }
+    }
+
+    &.mktoForm {
+      input[type=text],
+      input[type=url],
+      input[type=email],
+      input[type=tel],
+      input[type=number],
+      input[type=date],
+      select {
+        outline: none !important;
+      }
+
+      .mktoError {
+        .mktoErrorMsg {
+          background-color: #191919 !important;
+          color: white !important;
+          background-image: none;
+          box-shadow: none;
+          border: 1px solid #191919;
+          text-shadow: unset;
+          border-radius: 35px;
+        }
+        .mktoErrorArrowWrap {
+          left: 10px;
+        }
+        .mktoErrorArrow {
+          background-color: #191919;
+          border: 1px solid #191919;
+        }
+      }
+      .mktoLabel {
+        float: none;
+        padding: 0;
+      }
+      .mktoGutter {
+        display: none;
+      }
+    }
+    
+    input::-webkit-input-placeholder{
+      transition: all .3s ease-in-out;
+      position: relative;
+      top: 0px;
+      color: #191919;
+    }
+
+    input:focus::-webkit-input-placeholder {
+      font-size: 12px !important;
+      position: relative;
+      @media (min-width: 0px) and (max-width: 767px){
+        top: -20px;
+      }
+      @media (min-width: 768px){
+        top: -30px;
+      }
+    }  
+    
+    .mktoButtonRow {
+      
+      @media (min-width: 0px) and (max-width: 767px){
+        
+      }
+      @media (min-width: 768px){
+        margin-top: 3.4rem !important;
+      }
+
+    }
+    .mktoButtonWrap.mktoSimple {
+      margin-left: 0 !important;
+
+      .mktoButton {
+        font-family: 'Larsseit', sans-serif !important;
+        display: block;
+        border-radius: 35px;
+        padding: 0px 10px;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        min-height: 40px;
+        min-width: 150px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        cursor: pointer;
+        color: white;
+        transition: all .3s ease-in-out;
+
+        
+        @media (min-width: 0px) and (max-width: 767px){
+          margin-top: 2.5rem;
+        }
+
+        &:hover{
+          background: white !important;
+          color: #191919 !important;
+        }
+      }
+    }
+    .mktoTemplateBox {
+      color: #191919 !important;
+
+      @media (min-width: 0px) and (max-width: 767px){
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+      @media (min-width: 768px){
+        font-size: 1.125rem;
+        line-height: 1.875rem;
+      }
+    }
+    a.mktoNotYou {
+      color: #191919 !important;
+      @media (min-width: 0px) and (max-width: 767px){
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+      @media (min-width: 768px){
+        font-size: 1.125rem;
+        line-height: 1.875rem;
+      }
+    }
+    a {
+      color: #191919 !important;
+      padding: 0 !important;
+    }
+    .mktoRadioList,
+    .mktoCheckboxList {
+      width: auto !important;
+      padding-top: 0.5rem;
+      @media (max-width: 575px) {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+//Mobile
+@media (min-width: 0px) and (max-width: 767px){
+  form {
+    padding: 0 !important;
+
+    .mktoButtonRow {
+      display: block !important;
+
+      .mktoButton {
+        width: 100%;
+      }
+    }
+  }
+}
+
+//Tablet
+@media (min-width: 768px) and (max-width: 1024px){
+}
+
+//Desktop
+@media (min-width: 1025px){
+  .download-form {
+    max-width: 565px;
+    color: #191919;
+  }
+}

@@ -1,0 +1,70 @@
+.lang-switcher{
+    margin-right: 0;
+    @media (min-width: 0px) and (max-width: 767px){
+        margin-left: 0;
+        margin-top: 4rem;
+        flex: 1.5;
+    }
+    @media (min-width: 768px) and (max-width: 991px){
+        margin-left: 7.4rem;
+    }
+    .lang-chk-container{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        max-width: 149px;
+        @media (min-width: 768px){
+            justify-content: center;
+        }
+        .lang-chk{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            z-index: -1;
+        }
+        .lang-name{
+            font-size: 0.75rem;
+            font-weight: bold;
+            transition: all .3s cubic-bezier(0.63, -0.15, 0.1, 0.96);
+        }
+        .lang-chk-box{
+            background: #191919;
+            width: 79px;
+            height: 32px;
+            display: block;
+            border-radius: 40px;
+            position: relative;
+            cursor: pointer;
+            margin: 0 8px;
+            &:after{
+                content: '';
+                width: 28px;
+                height: 28px;
+                border-radius: 100%;
+                background: #F5EBE1;
+                position: absolute;
+                left: 2px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                transition: all .3s cubic-bezier(0.63, -0.15, 0.1, 0.96);
+            }
+        }
+        .lang-1{
+            opacity: 0.3;
+        }
+        .lang-chk:checked ~ .lang-0{
+            opacity: 0.3;
+        }
+        .lang-chk:checked ~ .lang-1{
+            opacity: 1;
+        }
+        .lang-chk:checked ~ a{
+            .lang-chk-box::after{
+                left: calc(100% - 30px);
+            }
+        }
+    }
+}

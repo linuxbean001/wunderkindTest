@@ -1,0 +1,67 @@
+.logos-wall-static{
+    position: relative;
+    z-index: 60;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    &.dark{
+        background: #191919;
+    }
+    a{
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-tap-highlight-color: transparent;
+    }
+    .brands-logo{
+        
+        @media (min-width: 0px) and (max-width: 767px){
+            margin: 0 20px;
+        }
+        @media (min-width: 768px) and (max-width: 1024px){
+            margin: 0 24px;
+        }
+        @media (min-width: 1025px){
+            margin: 0 24px;
+        }
+    }
+    .centered-title-wrap {
+        flex: 100%;
+        max-width: 100%;
+    }
+    @media (min-width: 0px) and (max-width: 767px){
+        flex-wrap: wrap;
+        .brands-logo{
+            margin: 0 15px;
+            height: 56px;
+            width: 56px;
+            flex: 0 0 56px;
+            img{
+                max-width: 56px;
+            }
+        }
+	}
+	@media (min-width: 768px) and (max-width: 1024px){
+        .brands-logo{
+            margin: 0 10px;
+        }
+    }
+    .logo-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+    }
+
+    @media(max-width: 576px){
+        .centered-title-wrap .section-title.centered{
+            padding-bottom: 1rem;
+        }
+        .brands-logo{
+            margin: 20px 15px;
+        }
+    }
+}

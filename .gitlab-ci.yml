@@ -1,0 +1,150 @@
+image: node:latest
+
+stages:
+  - build
+  - deploy
+
+cache:
+  paths:
+    - node_modules/
+
+buildDev:
+  stage: build
+  script:
+    - npm install
+    - WP_GQL_API="$WP_GQL_API" npm run build
+  artifacts:
+    paths:
+     - public
+  only:
+    - dev
+
+buildLive:
+  stage: build
+  script:
+    - npm install
+    - WP_GQL_API="$WP_GQL_API" npm run build
+  artifacts:
+    paths:
+     - public
+  only:
+    - master
+  when: manual
+
+dev_deploy:
+  image: ubuntu:latest
+  stage: deploy
+  needs:
+    - buildDev
+  dependencies:
+    - buildDev
+  only:
+    - dev
+  before_script:
+    ##
+    ## Install ssh-agent if not already installed, it is required by Docker.
+    ## (change apt-get to yum if you use an RPM-based image)
+    ##
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - apt-get install git -y
+    
+    ##
+    ## Run ssh-agent (inside the build environment)
+    ##
+    - eval $(ssh-agent -s)
+    - mkdir -p ~/.ssh
+
+    ##
+    ## Add the SSH key stored in SSH_PRIVATE_KEY variable to the agent store
+    ## We're using tr to fix line endings which makes ed25519 keys work
+    ## without extra base64 encoding.
+    ## https://gitlab.com/gitlab-examples/ssh-private-key/issues/1#note_48526556
+    ##
+    - echo -n "$SSH_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - ssh-keyscan git.wpengine.com > ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+
+    ##
+    ## Create the SSH directory and give it the right permissions
+    ##
+    - chmod 700 ~/.ssh
+
+    ##
+    ## Optionally, if you will be using any Git commands, set the user name and
+    ## and email.
+    ##
+    - mkdir /tmp/deploy
+  script:
+    - |
+      git config --global user.email "devops@lumina.nyc"
+      git config --global user.name "Devops Lumina"
+      git clone git@git.wpengine.com:production/bxgatsby.git ./tmp/deploy
+      rm -rf ./tmp/deploy/wp-static
+      mkdir ./tmp/deploy/wp-static
+      mv public/ ./tmp/deploy/wp-static/public/
+      cd ./tmp/deploy
+      git status
+      ls -l
+      git add .
+      git commit -m "Deploy commit $CI_COMMIT_SHORT_SHA to Production."
+      git push
+
+live_deploy:
+  image: ubuntu:latest
+  stage: deploy
+  needs:
+    - buildLive
+  dependencies:
+    - buildLive
+  only:
+    - master
+  before_script:
+    ##
+    ## Install ssh-agent if not already installed, it is required by Docker.
+    ## (change apt-get to yum if you use an RPM-based image)
+    ##
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - apt-get install git -y
+    
+    ##
+    ## Run ssh-agent (inside the build environment)
+    ##
+    - eval $(ssh-agent -s)
+    - mkdir -p ~/.ssh
+
+    ##
+    ## Add the SSH key stored in SSH_PRIVATE_KEY variable to the agent store
+    ## We're using tr to fix line endings which makes ed25519 keys work
+    ## without extra base64 encoding.
+    ## https://gitlab.com/gitlab-examples/ssh-private-key/issues/1#note_48526556
+    ##
+    - echo -n "$SSH_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - ssh-keyscan git.wpengine.com > ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+
+    ##
+    ## Create the SSH directory and give it the right permissions
+    ##
+    - chmod 700 ~/.ssh
+
+    ##
+    ## Optionally, if you will be using any Git commands, set the user name and
+    ## and email.
+    ##
+    - mkdir /tmp/deploy
+  script:
+    - |
+      git config --global user.email "devops@lumina.nyc"
+      git config --global user.name "Devops Lumina"
+      git clone git@git.wpengine.com:production/bxgatsby.git ./tmp/deploy
+      rm -rf ./tmp/deploy/wp-static
+      mkdir ./tmp/deploy/wp-static
+      mv public/ ./tmp/deploy/wp-static/public/
+      cd ./tmp/deploy
+      git status
+      ls -l
+      git add .
+      git commit -m "Deploy commit $CI_COMMIT_SHORT_SHA to Production."
+      git push

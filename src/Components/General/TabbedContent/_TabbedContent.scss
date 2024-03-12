@@ -1,0 +1,188 @@
+.tabs-content{
+    .tabs-content-wrap {
+        @media (min-width: 0px) and (max-width: 767px){
+            margin-bottom: 4rem;
+        }
+        @media (min-width: 768px) and (max-width: 1024px){
+            margin-bottom: 8rem;
+        }
+        @media (min-width: 1025px){
+            padding-bottom: 2.5rem;
+        }
+        .info-tabs{
+            position: relative;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            
+            @media (min-width: 0px) and (max-width: 767px){
+                margin-bottom: 1rem;
+            }
+            @media (min-width: 768px) and (max-width: 1024px){
+                margin-bottom: 1.5rem;
+            }
+            @media (min-width: 1025px){
+                margin-bottom: 5.3rem;
+            }
+            .active-line{
+                position: absolute;
+                width: 50px;
+                height: 5px;
+                background: #FFF;
+                bottom: -2px;
+                left: 0;
+                transition: all .3s ease-in-out;
+                @media (min-width: 0px) and (max-width: 1199px){
+                    display: none;
+                }
+            }
+            ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: inline-flex;
+                position: relative;
+                @media (min-width: 0px) and (max-width: 1199px){
+                    overflow-x: auto;
+                    width: 100%;
+                    &::-webkit-scrollbar {
+                        height: 11px;
+                    }
+                    &::-webkit-scrollbar-track {
+                        background: rgba(0, 0, 0, 0.8);
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background-color: #fff ;
+                        border-radius: 6px;
+                        border: 3px solid rgba(0, 0, 0, 0.8);
+                    }
+                }
+                &:after{
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    position: absolute;
+                    bottom: 0px;
+                    opacity: 0.3;
+                }
+                li{
+                    position: relative;
+                    @media (min-width: 0px) and (max-width: 1199px){
+                        &.active{
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                height: 5px;
+                                width: 100%;
+                                background: white;
+                                bottom: 0;
+                                left: 0;
+                            }
+                        }
+                    }
+                    button{
+                        color: #fff;
+                        text-decoration: none;
+                        font-weight: bold;
+                        border: 0;
+                        background: none;
+                        cursor: pointer;
+                        opacity: 0.3;
+                        transition: all .3s ease-in-out;
+                        
+                        @media (min-width: 1025px){
+                            &:hover{
+                                opacity: 0.8;
+                            }
+                        }
+                        @media (min-width: 0px) and (max-width: 767px){
+                            padding: 15px 17px 30px 17px;
+                            font-size: 1rem;
+                        }
+                        @media (min-width: 768px) and (max-width: 1024px){
+                            padding: 15px 50px 20px 50px;
+                            font-size: 1.5rem;
+                        }
+                        @media (min-width: 1025px){
+                            padding: 15px 35px 20px 35px;
+                            font-size: 1.25rem;
+                        }
+                    }
+                    &.active{
+                        button{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+        .tab-info-helper{
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .tab-info-boxes{
+            position: relative;
+        }
+        .tab-info{
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(2rem);
+            transition: all .3s ease-in-out;
+            &.active{
+                z-index: 5;
+            }
+            img{
+                width: 100%;
+                height: auto;
+                @media (min-width: 0px) and (max-width: 767px){
+                    margin-top: 2rem;
+                }
+                @media (min-width: 768px) and (max-width: 1024px){
+                    margin-top: 2.5rem;
+                }
+            }
+        }
+        .info-box {
+            margin-top: 8rem;
+            text-align: center;
+            img{
+                width: 100%;
+                height: auto;
+            }
+            .title{
+                font-size: 1.5rem;
+                line-height: 2rem;
+                margin-bottom: 1rem;
+            }
+            .text{
+                padding: 0px 15px;
+                @media (min-width: 0px) and (max-width: 767px){
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                }
+                @media (min-width: 768px){
+                    font-size: 1.125rem;
+                    line-height: 1.875rem;
+                }
+            }
+            .arrow{
+                margin-top: 1.5em;
+            }
+        }
+        .tab-info{
+            &.active{
+                opacity: 1;
+                transform: translateY(0);
+                visibility: visible;
+            }
+        }
+    }
+
+}

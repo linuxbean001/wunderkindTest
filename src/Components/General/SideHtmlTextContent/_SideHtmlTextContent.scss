@@ -1,0 +1,66 @@
+.side-html-text-content{
+    margin-top: 1.5rem;
+    padding-bottom: 6.5rem;
+    @media(min-width: 0px) and (max-width: 767px){
+        margin-top: 3rem;
+    }
+    h3{
+        font-size: 16px;
+        font-family: 'Larsseit', sans-serif;
+        font-weight: 600;
+        
+        @media(min-width: 768px){
+            font-size: 24px;
+            margin-top: 0.25rem;
+        }
+    }
+    p{
+        @media(max-width:768px){
+            font-size: 16px;
+        }
+    }
+    ul, ol{
+        padding-left: 1rem;
+    }
+    li{
+        font-family: 'Larsseit', sans-serif;
+        padding-bottom: .75rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        @media(min-width: 768px){
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+        }
+    }
+    a {
+        color: #25B89D;
+        text-decoration: none;
+        &:visited {
+            color: #25B89D;
+        }
+        &:hover {
+            color: #3D55CC;
+        }
+        span {
+            text-decoration: underline;
+        }
+    }
+    @media(max-width: 576px){
+        h3{
+            margin-bottom: 1.25rem;
+        }
+    }
+    .content-size-xl {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-top: 3rem;
+        @media (min-width: 1025px){
+            font-size: 2rem;
+            line-height: 2.5rem;
+            margin-top: 6rem;
+        }
+    }
+    &.side-no-padding {
+        padding-bottom: 0;
+    }
+}

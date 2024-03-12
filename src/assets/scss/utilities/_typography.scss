@@ -1,0 +1,85 @@
+@import "../variables/core";
+
+.text-white {
+  color: $white;
+}
+
+.text-black {
+  color: $primary-black;
+}
+
+.text-xs {
+  font-size: 0.75rem; /* 12px */
+  line-height: 1.25rem; /* 16px */
+}
+
+.text-sm {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
+.text-base {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+}
+
+.text-lg {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+}
+.text-xl {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+}
+
+.text-2xl {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+}
+
+.text-3xl {
+  font-size: 2rem; /* 32px */
+  line-height: 2.5rem; /* 40px */
+}
+
+.text-5xl {
+  font-size: 2.5rem; /* 40px */
+  line-height: 3rem; /* 48px */
+}
+
+.text-showcase {
+  font-size: 15rem;
+  opacity: 0.6;
+}
+
+/* FONT WEIGHT */
+.font-bold {
+  font-weight: 700;
+}
+
+/* FONT FAMILY */
+.font-wunder-brick-display {
+  font-family: "WunderBrickDisplay", "Times New Roman", Times, serif;
+}
+
+.font-larsseit {
+  font-family: "Larsseit", sans-serif;
+}
+// TEXT DECORATION
+.no-underline {
+  text-decoration-line: none;
+}
+
+/* LIST STYLE TYPE */
+.list-none {
+  list-style-type: none;
+}
+
+/* ALIGNMENT */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}

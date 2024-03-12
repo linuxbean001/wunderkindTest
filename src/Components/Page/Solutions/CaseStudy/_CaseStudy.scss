@@ -1,0 +1,349 @@
+.case-studies {
+    background: #fbfcfd;
+    color: #191919;
+    margin-bottom: -2px;
+    position: relative;
+    z-index: 50;
+    
+    @media (min-width: 0px) and (max-width: 767px){
+        padding-bottom: 1.5rem;
+    }
+    @media (min-width: 768px) and (max-width: 1024px){
+        padding-bottom: 4.5rem;
+    }
+    @media (min-width: 1025px){
+        padding-bottom: 8rem;
+    }
+
+    .content-container {
+        position: relative;
+        z-index: 55;
+        
+        @media (min-width: 0px) and (max-width: 767px){
+            margin-top: -7.4%;
+        }
+        @media (min-width: 768px) and (max-width: 1024px){
+            margin-top: -8.6%;
+        }
+        @media (min-width: 1025px){
+            margin-top: -11.4%;
+        }
+        @media only screen 
+		and (device-width: 414px) 
+		and (device-height: 896px) 
+		and (-webkit-device-pixel-ratio: 2) { 
+            z-index: 2000!important;
+            background-color: white!important;
+            background:white!important;
+		}
+		@media only screen 
+		and (device-width: 375px) 
+		and (device-height: 812px) 
+		and (-webkit-device-pixel-ratio: 3) { 
+            z-index: 2000!important;
+            background-color: white!important;
+            background:white!important;
+		}
+
+		@media only screen 
+		and (device-width: 414px) 
+		and (device-height: 896px) 
+		and (-webkit-device-pixel-ratio: 3) {
+            z-index: 2000!important;
+            background-color: white!important;
+            background:white!important;
+		}
+    }
+
+    .hero-brands-image {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+		@media (min-width: 0px) and (max-width: 767px){
+            height: 155px;
+		}
+		@media (min-width: 768px) and (max-width: 1024px){
+			height: 278px;
+		}
+        @media (min-width: 1025px){
+            max-height: 388px;
+        }
+        @media (min-width: 1800px){
+            max-height: 550px;
+            height: 550px;
+        }
+
+        position: relative;
+        z-index: 1;
+        
+        div{
+            position: relative;
+            z-index: 1;
+            width: 100%;
+
+            @media (min-width: 0px) and (max-width: 767px){
+                background-size: 175%;
+            }
+            @media (min-width: 768px) and (max-width: 1024px){
+                background-size: 100%;
+            }
+            height: 200%;
+            transform: translateY(-80%);
+        }
+    }
+
+    .swiper-slide{
+        opacity: 0;
+        transition: opacity .5s ease-in-out;
+        &.swiper-slide-active{
+            opacity: 1;
+        }
+    }
+
+    .case-studies-content{
+        .side-heading{
+            top: 22.1rem;
+            @media (min-width: 0px) and (max-width: 767px){
+                
+            }
+            @media (min-width: 768px) and (max-width: 1024px){
+                margin-top: 1.5rem;
+            }
+            @media (min-width: 1025px){
+                
+            }
+        }
+        
+        .img img{
+            max-width: 350px;
+        }
+
+        .title{
+            
+            
+            @media (min-width: 0px) and (max-width: 767px){
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+            @media (min-width: 768px){
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }
+            @media (min-width: 768px) and (max-width: 1024px){
+                margin-top: 1.5rem;
+                margin-bottom: 3.4rem;
+            }
+            @media (min-width: 1025px){
+                margin-top: 2.8rem;
+                margin-bottom: 3.4rem;
+            }
+
+        }
+        .user-box{
+            @media (min-width: 0px) and (max-width: 767px){
+                .img{
+                    display: none;
+                }
+            }
+            .user-info{
+                @media (min-width: 0px) and (max-width: 767px){
+                    margin-top: 0;
+                }
+                line-height: 1rem;
+                .name{
+                    font-weight: bold;
+                }
+            }
+        }
+        .btn-wrap{
+            @media (min-width: 0px) and (max-width: 767px){
+                text-align: center;
+                margin-top: 0rem;
+                margin-bottom: 0;
+            }
+            
+            @media (min-width: 768px){
+                margin-top: 3.5rem;
+            }
+        }
+        .stats {
+            @media (min-width: 0px) and (max-width: 767px){
+                margin-top: 2rem;
+                display: flex;
+                flex-wrap: wrap;
+                .value {
+                    font-size: 2rem;
+                    line-height: 2.5rem;
+                }
+                .label {
+                    font-size: 0.85rem;
+                    line-height: 1rem;
+                }
+                .stat-box{
+                    padding-bottom: 1rem;
+                    margin-bottom: 1rem;
+                    flex: 0 0 50%;
+                }
+            }
+            @media (min-width: 768px) and (max-width: 1024px){
+                margin-top: 3.5rem;
+                .value {
+                    font-size: 5.5rem;
+                    line-height: 6rem;
+                }
+                .label {
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                }
+                .stat-box{
+                    padding-bottom: 1rem;
+                    margin-bottom: 1rem;
+                    border-bottom: 1px solid rgba(25, 25, 25, 0.3)
+                }
+            }
+            @media (min-width: 1025px){
+                margin-top: 2.5rem;
+                .value {
+                    font-size: 5.5rem;
+                    line-height: 6rem;
+                }
+                .label {
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                }
+                .stat-box{
+                    padding-bottom: 1rem;
+                    margin-bottom: 2.5rem;
+                    border-bottom: 1px solid rgba(25, 25, 25, 0.3)
+                }
+            }
+            .label {
+                font-weight: bold;
+            }
+        }
+    }
+    .slider-dots{
+        width: 100%;
+        .dot{
+            width: 8px;
+            height: 8px;
+        }
+        @media (min-width: 0px) and (max-width: 767px){
+            margin-top: 2.1rem;
+            margin-bottom: 0.2rem;
+            justify-content: center;
+        }
+        @media (min-width: 768px) and (max-width: 1024px){
+            margin-top: 4rem;
+        }
+        @media (min-width: 1025px){
+            margin-top: 6rem;
+            justify-content: flex-start;
+        }
+    }
+
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+        background: #191919;
+    }
+    
+    .slide-nav {
+        @media (min-width: 1025px) {
+            justify-content: start;
+        }
+        margin-top: 3rem;
+        img {
+            filter: invert(1);
+        }
+    }
+
+    @media (min-width: 0px) and (max-width: 767px){
+        padding-bottom: 1.5rem;
+        .case-studies-content{
+            .title{
+                font-size: 1rem;
+                line-height: 1.5rem;
+                margin-top: 1rem;
+                margin-bottom: 1.5rem;
+            }
+            .stats .value{
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }
+            .stats .label{
+                font-size: 14px;
+                line-height: 1.5rem;
+            }
+            .stats{
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 2rem;
+
+                .stat-box{
+                    width: 50%;
+                    border: none;
+                }
+            }
+            .btn-wrap{
+                display: flex;
+                justify-content: center;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+                margin-top: 0;
+                margin-bottom: 0;
+                @media (min-width: 768px){
+                    margin-bottom: 2.5rem;
+                }
+            }
+            .user-info{
+                .name, .position{
+                    font-size: 14px;
+                }
+            }
+        }
+        .swiper-slide{
+            max-width: 100%;
+            overflow: hidden;
+
+            .img{
+                display: none;
+            }
+        }
+    }
+    
+    @media (min-width: 768px) and (max-width: 1024px){
+        .case-studies-content{
+            & > .container > .row > div:first-child{
+                padding-right: 12px;
+            }
+            .title, .stats label{
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+            .stats .value{
+                font-size: 4.5rem;
+                line-height: 4.5rem;
+            }
+        }
+        .swiper-slide{
+            max-width: 100%;
+            overflow: hidden;
+        }
+    }
+
+    .swiper-cs-pagination{
+        @media (min-width: 0px) and (max-width: 767px){
+            display: flex;
+            justify-content: center;
+            margin-top: 2.5rem;
+            margin-bottom: 1.25rem;
+        }
+        @media (min-width: 768px) and (max-width: 1024px){
+            margin-top: 3.25rem;
+        }
+        @media (min-width: 1025px){
+            
+        }
+    }
+
+}

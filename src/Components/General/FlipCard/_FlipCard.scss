@@ -1,0 +1,164 @@
+.flip-card-container {
+    perspective: 1000px;
+    padding-right: 15px;
+    .card {
+        transition: 0.6s;
+        transform-style: preserve-3d;
+        position: relative;
+        border-radius: 5px;
+        .front, .back {
+            backface-visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: white;
+        }
+        .front {
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            transform: rotateY(0deg);
+            border-radius: 5px;
+            text-align: center;
+            .title{
+                margin-top: 1rem;
+            }
+        }
+
+        .heading-shape{
+            background-size: cover;
+            background-position: 100% calc(100% - 5px);
+            background-repeat: no-repeat;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            @media (min-width: 0px) and (max-width: 767px){
+                height: 136.6px;
+            }
+            @media (min-width: 768px) and (max-width: 1199px){
+                height: 168px;
+            }
+            @media (min-width: 1200px){
+                height: 202px;
+            }
+        }
+        .info{
+            padding: 0 2rem;
+        }
+        
+        .title{
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            @media (min-width: 1025px){
+                font-size: 1.75rem;
+                line-height: 2.25rem;
+            }
+            @media (min-width: 1280px){
+                font-size: 2.5rem;
+                line-height: 3rem;
+            }
+        }
+        .subtitle{
+            @media (min-width: 0px) and (max-width: 767px){
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+        }
+        
+        .back {
+            transform: rotateY(180deg);
+            background: #191919;
+            color: white;
+            text-align: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            .info{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                min-height: 100%;
+                flex: 1;
+                
+                @media (min-width: 0px) and (max-width: 767px){
+                    padding: 0px 1.5rem;
+                }
+                @media (min-width: 768px){
+                    padding: 0px 2rem;
+                }
+            }
+        }
+        .btn-wrap{
+            width: 32px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: 2rem;
+            border: 0;
+            background: none;
+            display: block;
+            padding: 0;
+            margin: auto;
+            
+            @media (min-width: 1025px){
+                .btn-sign:hover{
+                    .in {
+                        -webkit-transform: translateY(0%);
+                        transform: translateY(0%);
+                    }
+                    .out{
+                        -webkit-transform: translateY(100%);
+                        transform: translateY(100%);
+                    }
+                }
+            }
+        }
+        .note {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0.3rem;
+            border: 0;
+            background: none;
+            display: block;
+            padding: 0;
+            margin: auto;
+            text-align: right;
+            font-size: 0.6rem;
+            padding: 0 0.5rem;
+        } 
+    }
+    @media(max-width: 769px){
+        .card .front .title{
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+}
+
+.flip-card-container.flipped .card{
+    transform: rotateY(180deg);
+}
+
+.card, .front, .back {
+	width: 100%;
+    @media (min-width: 0px) and (max-width: 767px){
+        height: 385px;
+    }
+    @media (min-width: 768px) and (max-width: 1199px){
+        height: 426px;
+    }
+    @media (min-width: 1200px){
+        height: 480px;
+    }
+}
+
+

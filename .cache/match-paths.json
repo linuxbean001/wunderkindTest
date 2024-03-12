@@ -1,0 +1,10 @@
+[
+    {
+        "path": "/uk/open-roles/",
+        "matchPath": "/uk/open-roles/*"
+    },
+    {
+        "path": "/open-roles/",
+        "matchPath": "/open-roles/*"
+    }
+]

@@ -1,0 +1,94 @@
+.numbers-content {
+  background: #f1f1f1;
+  color: #191919;
+  padding: 70px 0;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+
+    @media (max-width: 430px) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: normal;
+      gap: 3.2rem;
+      padding-left: 3rem;
+    }
+  }
+}
+
+.number {
+  margin: 0;
+  font-family: "WunderBrickDisplay";
+  font-size: 8.75rem;
+  line-height: 7.5rem;
+  width: fit-content;
+
+  @media (min-width: 2000px) {
+    font-size: 7rem;
+  }
+
+  @media (min-width: 3000px) {
+    font-size: 7.75rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 9rem;
+    line-height: 7rem;
+  }
+
+  @media (max-width: 430px) {
+    font-size: 5rem;
+    line-height: 3rem;
+    width: fit-content;
+  }
+
+  &-box {
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.74rem;
+
+    &:last-child {
+      @media (min-width: 699px) and (max-width: 991px) {
+        margin-top: 70px;
+      }
+    }
+
+    @media (max-width: 430px) {
+      width: 100%;
+    }
+  }
+
+  &-sign {
+    font-size: 4.6875rem;
+    line-height: 5.5rem;
+
+    @media (max-width: 430px) {
+      font-size: 3rem;
+      line-height: 3rem;
+    }
+  }
+
+  &-percentage {
+    margin: 0;
+    font-family: "Larsseit";
+    line-height: 2.25rem;
+    font-size: 1.5rem;
+    width: 16.5rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.125rem;
+      line-height: 1.625rem;
+    }
+
+    @media (max-width: 430px) {
+      font-size: 0.9rem;
+      line-height: 1rem;
+      width: fit-content;
+    }
+  }
+}

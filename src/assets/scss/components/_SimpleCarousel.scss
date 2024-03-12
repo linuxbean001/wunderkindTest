@@ -1,0 +1,56 @@
+.carousel-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.carousel-btns-wrapper {
+  position: absolute;
+  top: 94%;
+  left: 75%;
+}
+
+.carousel-btns-wrapper-mobile {
+  position: absolute;
+  top: 95%;
+  left: 60%;
+}
+
+.carousel-content-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-content {
+  display: flex;
+  transition: all 250ms linear;
+  -ms-overflow-style: none; /* hide scrollbar in IE and Edge */
+  scrollbar-width: none; /* hide scrollbar in Firefox */
+}
+
+/* hide scrollbar in webkit browser */
+.carousel-content::-webkit-scrollbar,
+.carousel-content::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-content > * {
+  width: 100%;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+// .carousel-content img {
+//   max-height: 22rem;
+// }
+
+.slider-btn {
+  background-color: transparent;
+  border: none;
+}

@@ -1,0 +1,30 @@
+.open-roles-jobs {
+    padding: 3.75rem 0 0 0;
+    position: relative;
+    z-index: 60;
+}
+
+.open-roles{
+    .inner-heading{
+        @media (min-width: 0px) and (max-width: 767px){
+            padding-top: 3.35rem;
+        }
+        @media (min-width: 768px) and (max-width: 1024px){
+            padding-top: 3.75rem;
+        }
+        @media (min-width: 1025px){
+            padding-top: 7.5rem;
+        }
+        @media (min-width: 1200px){
+            padding-top: 8rem;
+        }
+        @media (min-width: 1400px){
+            padding-top: 8.25rem;
+        }
+        h1{
+            @media (min-width: 1025px){
+                margin-top: -1rem;
+            }
+        }
+    }
+}

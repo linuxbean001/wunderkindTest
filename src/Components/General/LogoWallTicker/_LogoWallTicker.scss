@@ -1,0 +1,111 @@
+.brands-slider{
+    background: #191919;
+    padding-top: 3.5rem;
+    @media (min-width: 0px) and (max-width: 767px){
+        padding-bottom: 3rem;
+    }
+    @media (min-width: 768px) and (max-width: 1024px){
+        padding-bottom: 4rem;
+    }
+    @media (min-width: 1025px){
+        padding-bottom: 5rem;
+    }
+}
+
+section.brands-slider.solutions-logo-slider {
+    position: relative;
+    z-index: 91;
+    padding-top: 7.4rem;
+    
+    @media (min-width: 0px) and (max-width: 767px){
+        margin-bottom: -5rem;
+        padding-bottom: 0;
+    }
+    @media (min-width: 768px) and (max-width: 1024px){
+        
+    }
+    @media (min-width: 1025px){
+        margin-bottom: -8.5rem;
+        padding-top: 10.75rem;
+        padding-bottom: 65px;
+    }
+}
+
+
+.ticker {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    @media (min-width: 0px) and (max-width: 767px){
+        padding-top: 0rem;
+        margin-top: -1.5rem;
+        padding: 1rem 0;
+    }
+    @media (min-width: 768px) and (max-width: 1024px){
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    @media (min-width: 1025px){
+        margin-top: -1.2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+  }
+  .ticker-wrap {
+    display: flex;
+    justify-content: space-between;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    @media (min-width: 0px) and (max-width: 767px){
+        animation: ticker 22s infinite linear;
+    }
+    @media (min-width: 768px) and (max-width: 1024px){
+        animation: ticker 20s infinite linear;
+    }
+    @media (min-width: 1025px){
+        animation: ticker 18s infinite linear;
+    }
+    @media (min-width: 1450px){
+        min-width: 100vw;
+        &:first-child{
+            margin-right: 5rem;
+        }
+        animation: ticker 25s infinite linear;
+    }
+  }
+  .ticker:hover .ticker-wrap {
+    animation-play-state: paused;
+  }
+  .ticker-item {
+    margin: 0px 30px;
+    .brands-logo{
+        opacity: 0.3;
+        width: 140px;
+        height: 140px;
+        padding: 10px;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        &:hover{
+            opacity: 1;
+        }
+        &:after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+    }
+    a{
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-tap-highlight-color: transparent;
+    }
+  }
+  @keyframes ticker {
+    0%{
+        transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+

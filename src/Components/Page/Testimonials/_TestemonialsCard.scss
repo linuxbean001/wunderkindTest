@@ -1,0 +1,241 @@
+.testemonial-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+
+.testemonial-card {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  .testemonial-card-wrapper {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+.card-logo-wrapper {
+  padding-right: 35px;
+}
+
+.testemonial-card:nth-child(even) {
+    padding-left: 28px;
+}
+
+.testemonial-card:nth-child(1), .testemonial-card:nth-child(2) {
+    border-top: none !important;
+}
+
+
+.testemonial-card-wrapper {
+  .card-header-img {
+    max-height: 290.52px;
+    max-width: 290.52px;
+  }
+
+  .card-header-video {
+    max-height: 290.52px;
+    max-width: 100%;
+    padding-right: 60px;
+  }
+
+  .playCircle {
+    width: 79px;
+    height: 79px;
+    position: absolute;
+    cursor: pointer;
+    left: 235px;
+    top: 155px;
+    background-image: url('/images/testimonial/play-circle.png');
+  }
+
+  .card-text-and-logo-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: space-between;
+  }
+
+
+  .card-author-name-role {
+    font-family: 'Larsseit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .card-title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    max-width: 70%;
+    font-family: 'WunderBrick';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .card-logo-img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-left:20px;
+  }
+
+  .card-description {
+    font-size: 12px !important;
+    margin: 0 !important;
+    padding: 0;
+    line-height: 16px;
+  }
+
+  .card-btn {
+    min-width: 150px;
+    background: #ffbb00;
+    color: #191919;
+    border: none !important;
+    margin-top:30px;
+    &::before {
+      background: #ffbb00;
+    }
+  }
+}
+
+
+
+@media (min-width: 1200px) and (max-width: 1399px){
+  .testemonial-card {
+    .playCircle {
+      width: 79px;
+      height: 79px;
+      position: absolute;
+      cursor: pointer;
+      left: 180px;
+      top: 130px;
+      background-image: url('/images/testimonial/play-circle.png');
+    }
+  }
+}
+
+@media (min-width: 0px) and (max-width: 620px){
+  .testemonial-card {
+    .card-header-video {
+      padding-right: 0px;
+    }
+  }
+}
+
+@media (min-width: 0px) and (max-width: 560px){
+  .testemonial-card {
+    .card-header-video {
+      padding-right: 0px;
+    }
+    .playCircle {
+      left: 41%;
+      top: 22%;
+    }
+  }
+}
+
+@media (min-width: 0px) and (max-width: 450px){
+  .testemonial-card {
+    .card-header-img {
+      max-height: 329.83px;
+      max-width: 100%;
+    }
+
+    .card-header-video {
+      max-height: 183.57px;
+      max-width: 100%;
+      padding-right: 0px;
+    }
+
+    .playCircle {
+      width: 79px;
+      height: 79px;
+      position: absolute;
+      cursor: pointer;
+      left: 152px;
+      top: 105px;
+      background-image: url('/images/testimonial/play-circle.png');
+    }
+    .card-author-name-role {
+      text-align: start !important;
+    }
+
+    .card-text-and-logo-wrapper {
+      justify-content: start !important;
+      align-items: start !important;
+    }
+
+    .card-btn {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  }
+}
+
+
+
+.testemonial-card-empty-btn {
+  height: 40px !important;
+  margin-top: 30px;
+}
+@media screen and (max-width: 767px) {
+.testemonials-row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+}
+
+@media screen and (max-width: 1199px) {
+.testemonial-card .testemonial-card-wrapper {
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: inherit;
+
+  .card-btn {
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+  }
+  .card-author-name-role {
+    text-align: start;
+    font-size: 14px;
+  }
+
+  .card-text-and-logo-wrapper {
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .card-logo-img {
+    margin-left: 0px;
+  }
+  .card-title {
+    font-size: 16px;
+    font-family: 'Larsseit';
+  }
+}
+}
+
+  @media screen and (min-width: 1200px) {
+    .testemonial-card:nth-child(odd) {
+      .testemonial-card-wrapper {
+        width: 100%;
+        border-right: 1px solid rgba(255, 255, 255, 0.4);
+
+      }
+    }
+
+    .testemonial-card {
+      border-top: 1px solid rgba(255, 255, 255, 0.4);
+      border-bottom: none !important;
+    }
+}
